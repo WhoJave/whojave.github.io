@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-01-17T09:29:59.000Z</updated>
+  <updated>2016-01-18T08:17:42.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,55 +15,377 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[Hello Hexo]]></title>
-    <link href="http://yoursite.com/2016/01/16/Hello-Hexo/"/>
-    <id>http://yoursite.com/2016/01/16/Hello-Hexo/</id>
-    <published>2016-01-16T09:11:12.000Z</published>
-    <updated>2016-01-17T09:29:59.000Z</updated>
-    <content type="html"><![CDATA[<ul>
-<li>开始</li>
-<li>我</li>
-<li>日记<br>categories: 日志</li>
-</ul>
+    <title><![CDATA[源代码管理工具-GIT]]></title>
+    <link href="http://yoursite.com/2014/04/08/%E6%BA%90%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7-GIT/"/>
+    <id>http://yoursite.com/2014/04/08/源代码管理工具-GIT/</id>
+    <published>2014-04-08T14:20:23.000Z</published>
+    <updated>2016-01-18T08:17:42.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="u2014"><a href="#u2014" class="headerlink" title="—-"></a>—-</h2><h2 id="u4E00-__u638C_u63E1_-_git__u6982_u8FF0"><a href="#u4E00-__u638C_u63E1_-_git__u6982_u8FF0" class="headerlink" title="一. 掌握 - git 概述"></a>一. 掌握 - git 概述</h2><h3 id="1-_git__u7B80_u4ECB_3F"><a href="#1-_git__u7B80_u4ECB_3F" class="headerlink" title="1. git 简介?"></a>1. git 简介?</h3><ol>
+<li><p>什么是git?</p>
+<pre><code>&gt; git是一款开源的分布式版本控制工具
+&gt; 在世界上所有的分布式版本控制工具中，git是最快、最简单、最流行的
+</code></pre></li>
+<li><p>git的起源?</p>
+<pre><code>&gt; 作者是Linux之父：Linus Benedict Torvalds
+&gt; 当初开发git仅仅是为了辅助Linux内核的开发（管理源代码）
+</code></pre></li>
+<li><p>git的现状?</p>
+<pre><code>&gt; 在国外已经非常普及，国内并未普及（在慢慢普及）
+&gt; 越来越多的开源项目已经转移到git
+</code></pre></li>
+</ol>
+<h3 id="2-__u5E38_u89C1_u7684_u6E90_u4EE3_u7801_u7BA1_u7406_u5DE5_u5177_u6709_u54EA_u4E9B_3F"><a href="#2-__u5E38_u89C1_u7684_u6E90_u4EE3_u7801_u7BA1_u7406_u5DE5_u5177_u6709_u54EA_u4E9B_3F" class="headerlink" title="2. 常见的源代码管理工具有哪些?"></a>2. 常见的源代码管理工具有哪些?</h3><pre><code>&gt; CVS
+     - 开启版本控制之门
+    - 1990年诞生，“远古时代”的主流源代码管理工具
+
+&gt; SVN
+    - 全称是Subversion，集中式版本控制之王者
+    - 是CVS的接班人，速度比CVS快，功能比CVS多且强大
+    - 在国内软件企业中使用最为普遍（70%-90%）
+
+&gt; ClearCase
+    - 收费的集中式版本控制工具，安装比Windows还大，运行比蜗牛还慢
+    - 能用ClearCase的一般是世界500强，他们有个共同的特点是财大气粗或者人傻钱多
+
+&gt; VSS
+    - 微软的集中式版本控制工具，集成在Visual Studio中
+</code></pre><h3 id="3-__u96C6_u4E2D_u5F0F_u7248_u672C_u63A7_u5236"><a href="#3-__u96C6_u4E2D_u5F0F_u7248_u672C_u63A7_u5236" class="headerlink" title="3. 集中式版本控制"></a>3. 集中式版本控制</h3><p><strong>所有的代码都集中在一块, 统一进行管理</strong><br><img src="/./Git_Images/集中式版本控制图解.png" alt="image"></p>
+<h3 id="4-__u5206_u5E03_u5F0F_u7248_u672C_u63A7_u5236"><a href="#4-__u5206_u5E03_u5F0F_u7248_u672C_u63A7_u5236" class="headerlink" title="4. 分布式版本控制"></a>4. 分布式版本控制</h3><p><strong>在每个客户端都有一份完整的代码仓库, 可以在每个客户端自行管理</strong><br><img src="/./Git_Images/分布式版本控制图解.png" alt="image"></p>
+<h3 id="5-_git__u548C_svn_u7684_u7B80_u5355_u5BF9_u6BD4"><a href="#5-_git__u548C_svn_u7684_u7B80_u5355_u5BF9_u6BD4" class="headerlink" title="5. git 和 svn的简单对比"></a>5. git 和 svn的简单对比</h3><pre><code>&gt; 速度
+    在很多情况下，git的速度远远比SVN快
+&gt; 结构
+    SVN是集中式管理，git是分布式管理
+&gt; 其他
+    SVN使用分支比较笨拙，git可以轻松拥有无限个分支
+    SVN必须联网才能正常工作，git支持本地版本控制工作
+    旧版本的SVN会在每一个目录置放一个.svn，git只会在根目录拥有一个.git
+</code></pre><h3 id="6-_SVN_u5DE5_u4F5C_u6D41_u7A0B_u548CGIT_u5DE5_u4F5C_u6D41_u7A0B_u5BF9_u6BD4"><a href="#6-_SVN_u5DE5_u4F5C_u6D41_u7A0B_u548CGIT_u5DE5_u4F5C_u6D41_u7A0B_u5BF9_u6BD4" class="headerlink" title="6. SVN工作流程和GIT工作流程对比"></a>6. SVN工作流程和GIT工作流程对比</h3><pre><code>- svn checkout —— git clone
+    svn 只下载代码， git 会连同代码仓库一起下载下来
+
+- svn commit —— git commit
+    svn 是提交到服务器，git 中是提交到本地仓库，需要使用push才能提交到服务器
+
+-  svn update - git pull
+    都是从服务器下载最新被修改的代码
+</code></pre><p><strong>分布式和集中式最大的区别在于：在分布式下，本地有个代码仓库,开发者可以在本地提交; 而集中式版本控制, 只有在服务器才有一个代码仓库, 只能在服务器进行统一管理</strong></p>
+<h3 id="7-_git_u5DE5_u4F5C_u539F_u7406"><a href="#7-_git_u5DE5_u4F5C_u539F_u7406" class="headerlink" title="7. git工作原理"></a>7. git工作原理</h3><ol>
+<li><p>概念理解</p>
+<pre><code>- 工作区
+    &gt; 与.git文件夹同级的其他文件夹或者子文件夹
+
+- 版本控制库
+    &gt; 暂缓区
+    &gt; 分支(Git不像SVN那样有主干和分支的概念. 仅仅存在分支,其中master分支为默认被创建的分支,类似于SVN中的主干)
+        切换分支:通过控制HEAD指针指向不同的分支,就可以切换*
+</code></pre></li>
+</ol>
+<p><strong> 操作原则: 所有新添加/删除/修改的文件 必须先添加到暂缓区,然后才能提交到HEAD指向的当前分支中</strong></p>
+<h3 id="8-_git_u4F7F_u7528_u73AF_u5883"><a href="#8-_git_u4F7F_u7528_u73AF_u5883" class="headerlink" title="8. git使用环境"></a>8. git使用环境</h3><ol>
+<li><p>单人开发只需要一个本地库</p>
+<pre><code>原因:不需要与他人共享代码,只负责管理自己代码即可;例如提交代码,删除代码,版本控制等等
+</code></pre></li>
+<li><p>多人开发时需要一个共享版本库</p>
+<pre><code>共享版本库的形式:
+    本地共享库:文件夹/U盘/硬盘
+    远程共享库:自己搭建git服务器/ 托管到第三方平台(例如github, oschina)
+</code></pre></li>
+<li><p>客户端使用环境<br><strong> 无论是单人开发还是多人开发,客户端都可以使用命令行或者图形界面使用git</strong></p>
+<pre><code>&gt; SourceTree
+    - 下载地址：http://www.sourcetreeapp.com/download/
+&gt; GitHub
+    - 下载地址：https://mac.github.com
+    - 不过它是专门为GitHub网站而设计的
+&gt; Xcode
+    - 虽然集成较好,但是只能做一些常用的简单操作,复杂操作还要使用命令行
+</code></pre></li>
+</ol>
+<h3 id="9-__u5B66_u4E60_u7F51_u7AD9"><a href="#9-__u5B66_u4E60_u7F51_u7AD9" class="headerlink" title="9. 学习网站"></a>9. 学习网站</h3><pre><code>http://backlogtool.com/git-guide/cn/intro/intro1_1.html
+</code></pre><hr>
+<h2 id="u4E8C-__u638C_u63E1_-_Git_u547D_u4EE4_u884C_u6F14_u7EC3-_u4E2A_u4EBA_u5F00_u53D1"><a href="#u4E8C-__u638C_u63E1_-_Git_u547D_u4EE4_u884C_u6F14_u7EC3-_u4E2A_u4EBA_u5F00_u53D1" class="headerlink" title="二. 掌握 - Git命令行演练-个人开发"></a>二. 掌握 - Git命令行演练-个人开发</h2><h3 id="0-__u5982_u4F55_u5B66_u4E60git_u6307_u4EE4"><a href="#0-__u5982_u4F55_u5B66_u4E60git_u6307_u4EE4" class="headerlink" title="0. 如何学习git指令"></a>0. 如何学习git指令</h3><pre><code>&gt; git help [子命令]
+&gt; 和学习SVN指令是一样的，只不过git是通过使用指南的形式展示给用户看（不能编辑的vim编辑器），使用q退出vim编辑器，按空格进入下一页，ctrl + B 回到上一页； /关键字 进行搜索
+</code></pre><h3 id="1-__u521D_u59CB_u5316_u4E00_u4E2A_u672C_u5730_u4ED3_u5E93"><a href="#1-__u521D_u59CB_u5316_u4E00_u4E2A_u672C_u5730_u4ED3_u5E93" class="headerlink" title="1. 初始化一个本地仓库"></a>1. 初始化一个本地仓库</h3><pre><code>&gt; 原因: 管理本地代码,修改上传,版本回退
+&gt; 命令: git init
+</code></pre><h3 id="2-__u914D_u7F6E_u4ED3_u5E93"><a href="#2-__u914D_u7F6E_u4ED3_u5E93" class="headerlink" title="2. 配置仓库"></a>2. 配置仓库</h3><pre><code>&gt; 告诉git你是谁？
+    原因: 追踪修改记录
+    命令: git config user.name “shunzi”
+
+&gt; 告诉git怎样联系你？
+    原因: 多人合作开发时, 沟通交流
+    命令: git config user.email &quot;shunzi@qq.com&quot;
+
+&gt; 查看配置信息（.git -&gt; config打开）
+    命令:  git config -l
+</code></pre><h3 id="3-__u4E2A_u4EBA_u5F00_u53D1_u6F14_u7EC3"><a href="#3-__u4E2A_u4EBA_u5F00_u53D1_u6F14_u7EC3" class="headerlink" title="3. 个人开发演练"></a>3. 个人开发演练</h3><pre><code>&gt; 创建文件并提交
+    命令: 
+        touch main.c
+        git add . 
+        git commit -m “注释”
+&gt; 修改文件并提交 
+    命令: 
+        git add .
+        git commit -m “注释”
+&gt; 删除文件并提交
+    命令: 
+        git rm person.h
+        git commit -m “注释”
+&gt; 日志查看
+    命令: 
+        git log 
+        git reflog
+&gt; 版本回退
+    命令: 
+        git reset —-hard HEAD 重置到当前版本
+        git reset —-hard HEAD^^ 重置到上上个版本
+        git reset ——hard HEAD~2 重置到往上2个版本
+        git reset —-hard 七位版本号 重置到指定版本::
+</code></pre><h3 id="4-__u5907_u6CE8_u8865_u5145"><a href="#4-__u5907_u6CE8_u8865_u5145" class="headerlink" title="4. 备注补充"></a>4. 备注补充</h3><ol>
+<li><p>文件状态(git status)</p>
+<pre><code>&gt; 颜色含义
+    红色: 代表被添加或者修改的文件没有被添加到暂缓区
+    绿色: 代表文件在暂缓区,等待提交
+&gt; 版本号的含义
+    版本号是一个由SHA1生成的40位哈希值
+    这样做的目的是保证版本号的唯一
+</code></pre></li>
+<li><p>vim编辑器的使用<br><img src="/./Git_Images/vim编辑器使用.png/" alt="image"></p>
+<pre><code>命令模式:等待编辑命令输入;所有输入的内容都被当做命令来执行
+插入模式:输入的所有内容都被显示,并被当做文件内容处理
+命令行模式:执行待定命令(保存文件并退出vim : wq   ; 强制退出不保存: q! )
+</code></pre></li>
+</ol>
+<ol>
+<li><p>日志查看配置</p>
+<pre><code>命令如下: 
+    git config --global alias.lg &quot;log --color --graph --pretty=format:&apos;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)\&lt;%an\&gt;%Creset&apos; --abbrev-commit&quot;
+</code></pre></li>
+<li><p>配置别名</p>
+<pre><code>git config alias.st “status”
+git config alias.ci “commit -m”
+</code></pre></li>
+<li><p>–global的作用</p>
+<pre><code>可以进行全局配置,所有的版本库共享此配置
+查看全局配置（桌面前往-&gt;个人-&gt;.gitconfig
+** 个人电脑上建议使用全局配置**
+</code></pre></li>
+</ol>
+<h2 id="u4E09-__u638C_u63E1_-_Git_u547D_u4EE4_u884C_u6F14_u7EC3-_u56E2_u961F_u5F00_u53D1"><a href="#u4E09-__u638C_u63E1_-_Git_u547D_u4EE4_u884C_u6F14_u7EC3-_u56E2_u961F_u5F00_u53D1" class="headerlink" title="三. 掌握 - Git命令行演练-团队开发"></a>三. 掌握 - Git命令行演练-团队开发</h2><p><strong> 团队开发必须有一个共享库,这样成员之间才可以进行协作开发</strong></p>
+<h3 id="0-__u5171_u4EAB_u5E93_u5206_u7C7B"><a href="#0-__u5171_u4EAB_u5E93_u5206_u7C7B" class="headerlink" title="0. 共享库分类"></a>0. 共享库分类</h3><pre><code>&gt; 本地共享库(只能在本地面对面操作)
+    - 电脑文件夹/U盘/移动硬盘
+
+&gt; 远程共享库(可通过网络远程操作)
+    - 自己搭建Git服务器(**不建议**)
+    - 在Github上托管项目(** 建议**)
+        Github网址(https://github.com); 公开项目免费, 私有项目收费
+    - 在OSChina上托管项目(** 推荐**)
+        OSChina网址(https://git.oschina.net) 安全免费,在国内访问速度快
+</code></pre><h3 id="1-__u642D_u5EFA_u672C_u5730_u5171_u4EAB_u5E93"><a href="#1-__u642D_u5EFA_u672C_u5730_u5171_u4EAB_u5E93" class="headerlink" title="1. 搭建本地共享库"></a>1. 搭建本地共享库</h3><pre><code>原因: 多人合作开发,代码共享
+命令: git init —-bare
+</code></pre><h3 id="2-__u7ECF_u7406_u521D_u59CB_u5316_u9879_u76EE_u5230_u672C_u5730_u5171_u4EAB_u5E93"><a href="#2-__u7ECF_u7406_u521D_u59CB_u5316_u9879_u76EE_u5230_u672C_u5730_u5171_u4EAB_u5E93" class="headerlink" title="2. 经理初始化项目到本地共享库"></a>2. 经理初始化项目到本地共享库</h3><pre><code>命令: git clone 本地代码仓库地址
+</code></pre><h3 id="3-__u6F14_u793A_u591A_u4EBA_u5F00_u53D1"><a href="#3-__u6F14_u793A_u591A_u4EBA_u5F00_u53D1" class="headerlink" title="3. 演示多人开发"></a>3. 演示多人开发</h3><pre><code>&gt; 创建文件夹manager, niuda
+    命令:
+        mkdir manager 
+        mkdir niuda
+&gt; 分别进入到两个文件夹从共享库clone项目到本地
+    命令:
+        git clone 本地代码仓库地址
+        git clone 本地代码仓库地址
+&gt; 演练新增文件同步
+    命令:
+        touch person.h
+        git add .     
+        git commit -m “创建person.h”
+        git push    
+        git pull
+&gt; 演练修改文件同步
+    命令:
+        git add . 
+        git commit -m “注释”
+        git push
+        git pull
+&gt; 演练删除文件同步
+    命令:
+        git rm filename
+        git commit -m “注释”
+        git push       
+        git pull
+&gt; 演练冲突解决
+    命令:
+        git pull
+
+&gt; 演练忽略文件
+    命令:
+        touch .gitignore   
+        open .gitignore   加入忽略文件名
+        git add .     
+        git commit -m “注释”
+    .gitignore文件配置规则
+        http://www.cnblogs.com/haiq/archive/2012/12/26/2833746.html
+</code></pre><h3 id="4-__u5907_u6CE8_u7B14_u8BB0"><a href="#4-__u5907_u6CE8_u7B14_u8BB0" class="headerlink" title="4. 备注笔记"></a>4. 备注笔记</h3><pre><code>&gt; 关于忽略文件
+     在真实开发中,配置.gitignore文件 ， 去github里面搜索gitignore 选择OC版本的，拷贝到本地仓库即可,记得添加到本地版本库
+
+&gt; 常见问题
+    fetch first 代表当前文件过期,需要从远程共享库更新 
+    git pull
+</code></pre><hr>
+<h2 id="u56DB-__u638C_u63E1_-_Git-XCode_u6F14_u7EC3-_u56E2_u961F_u5F00_u53D1"><a href="#u56DB-__u638C_u63E1_-_Git-XCode_u6F14_u7EC3-_u56E2_u961F_u5F00_u53D1" class="headerlink" title="四. 掌握 - Git-XCode演练-团队开发"></a>四. 掌握 - Git-XCode演练-团队开发</h2><h3 id="1-__u642D_u5EFA_u672C_u5730_u5171_u4EAB_u7248_u672C_u5E93"><a href="#1-__u642D_u5EFA_u672C_u5730_u5171_u4EAB_u7248_u672C_u5E93" class="headerlink" title="1. 搭建本地共享版本库"></a>1. 搭建本地共享版本库</h3><pre><code>命令: git init —-bare
+</code></pre><h3 id="2-__u521D_u59CB_u5316_u9879_u76EE_u5230_u5171_u4EAB_u7248_u672C_u5E93"><a href="#2-__u521D_u59CB_u5316_u9879_u76EE_u5230_u5171_u4EAB_u7248_u672C_u5E93" class="headerlink" title="2. 初始化项目到共享版本库"></a>2. 初始化项目到共享版本库</h3><pre><code>** 注意: 添加忽略文件, 不然Xcode有可能会把没必要的文件提交**
+** 必须在使用Xcode之前把忽略文件添加进来, 因为Xcode创建工程时, 默认直接把所有文件添加到暂缓区, 加进去之后忽略文件对其就无效了**
+</code></pre><h2 id="u4E94-__u4E86_u89E3_-_github_u7684_u4F7F_u7528"><a href="#u4E94-__u4E86_u89E3_-_github_u7684_u4F7F_u7528" class="headerlink" title="五. 了解 - github的使用"></a>五. 了解 - github的使用</h2><h3 id="1-__u6258_u7BA1_u9879_u76EE_u5230github-HTTPS_u9A8C_u8BC1"><a href="#1-__u6258_u7BA1_u9879_u76EE_u5230github-HTTPS_u9A8C_u8BC1" class="headerlink" title="1. 托管项目到github-HTTPS验证"></a>1. 托管项目到github-HTTPS验证</h3><ol>
+<li>打开github网站:[<a href="https://www.github.com" target="_blank" rel="external">https://www.github.com</a>]</li>
+<li>注册账号</li>
+<li>点击创建新仓库[<a href="https://github.com/new" target="_blank" rel="external">https://github.com/new</a>]</li>
+<li>填入项目名称,描述等信息</li>
+<li>创建完成</li>
+<li>可根据生成的版本库地址进行克隆下来进行操作</li>
+</ol>
+<h3 id="2-__u6258_u7BA1_u9879_u76EE_u5230github-SSH_u9A8C_u8BC1"><a href="#2-__u6258_u7BA1_u9879_u76EE_u5230github-SSH_u9A8C_u8BC1" class="headerlink" title="2. 托管项目到github-SSH验证"></a>2. 托管项目到github-SSH验证</h3><ol>
+<li>点击”个人” -&gt; setting -&gt; SSH keys -&gt; Add SSH key</li>
+<li>将生成的公钥添加进来即可.(以下是生成公钥私钥方法)<br> [<a href="https://help.github.com/articles/generating-ssh-keys/" target="_blank" rel="external">https://help.github.com/articles/generating-ssh-keys/</a>]</li>
+</ol>
+<h3 id="3-__u600E_u6837_u5C06_u5176_u4ED6_u8457_u540D_u6846_u67B6_u6DFB_u52A0_u5230_u6211_u4EEC_u7684_u4EE3_u7801_u4ED3_u5E93_3F"><a href="#3-__u600E_u6837_u5C06_u5176_u4ED6_u8457_u540D_u6846_u67B6_u6DFB_u52A0_u5230_u6211_u4EEC_u7684_u4EE3_u7801_u4ED3_u5E93_3F" class="headerlink" title="3. 怎样将其他著名框架添加到我们的代码仓库?"></a>3. 怎样将其他著名框架添加到我们的代码仓库?</h3><ol>
+<li>搜索到对应的框架</li>
+<li>点击fork</li>
+<li><p>当项目被移到自己代码仓库中,就可以根据地址克隆下来进行操作</p>
+<pre><code>** 注意:
+    你可以针对此框架进行任意修改,但是仅仅作用在你的本地仓库中的副本,对原作者项目没有任何影响. 
+    如果想向原作者提建议,可以直接使用,pull request操作.
+    提交完成后,原作者可以在pull request中看到你的提交.至于是否采纳,就是原作者的意愿
+</code></pre></li>
+</ol>
 <hr>
-<p>这是<strong>新的开始</strong>，我用hexo创建了第一篇文章。</p>
-<p>通过下面的命令，就可以创建新文章</p>
-<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="header">hexo new 新的开始</span><br><span class="line">------------------</span></span><br><span class="line">在命令行,启动服务器</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<p>感觉非常好。</p>
+<h2 id="u516D-__u4E86_u89E3_-_OSChina_u7684_u4F7F_u7528"><a href="#u516D-__u4E86_u89E3_-_OSChina_u7684_u4F7F_u7528" class="headerlink" title="六. 了解 - OSChina的使用"></a>六. 了解 - OSChina的使用</h2><h3 id="1-__u6258_u7BA1_u9879_u76EE_u5230OSChina"><a href="#1-__u6258_u7BA1_u9879_u76EE_u5230OSChina" class="headerlink" title="1. 托管项目到OSChina"></a>1. 托管项目到OSChina</h3><ol>
+<li>打开oschina网站:[<a href="https://git.oschina.net" target="_blank" rel="external">https://git.oschina.net</a>]</li>
+<li>注册账号(OneShunzi)</li>
+<li>点击创建新仓库[<a href="https://git.oschina.net/projects/new" target="_blank" rel="external">https://git.oschina.net/projects/new</a>]</li>
+<li>填入项目名称,描述等信息</li>
+<li>创建完成</li>
+<li>可根据生成的版本库地址进行克隆下来进行操作</li>
+</ol>
+<h3 id="2-__u600E_u6837_u52A0_u5165_u5408_u4F5C_u4F19_u4F34_3F"><a href="#2-__u600E_u6837_u52A0_u5165_u5408_u4F5C_u4F19_u4F34_3F" class="headerlink" title="2. 怎样加入合作伙伴?"></a>2. 怎样加入合作伙伴?</h3><ol>
+<li>点击”管理”->项目成员管理->选择成员权限进行创建</li>
+<li><p>或者直接只用SSH(以下是生成公钥私钥方法)</p>
+<pre><code>&gt; 部署公钥允许以只读的方式访问项目，主要用于项目在生产服务器的部署上，免去HTTP方式每次操作都要输入密码和普通SSH方式担心不小心修改项目代码的麻烦。
+&gt; [https://help.github.com/articles/generating-ssh-keys/]
+</code></pre></li>
+</ol>
+<h3 id="3-__u600E_u6837_u5C06_u5176_u4ED6_u8457_u540D_u6846_u67B6_u6DFB_u52A0_u5230_u6211_u4EEC_u7684_u4EE3_u7801_u4ED3_u5E93_3F-1"><a href="#3-__u600E_u6837_u5C06_u5176_u4ED6_u8457_u540D_u6846_u67B6_u6DFB_u52A0_u5230_u6211_u4EEC_u7684_u4EE3_u7801_u4ED3_u5E93_3F-1" class="headerlink" title="3. 怎样将其他著名框架添加到我们的代码仓库?"></a>3. 怎样将其他著名框架添加到我们的代码仓库?</h3><ol>
+<li>搜索到对应的框架</li>
+<li>点击fork</li>
+<li><p>当项目被移到自己代码仓库中,就可以根据地址克隆下来进行操作</p>
+<pre><code>** 注意:
+    你可以针对此框架进行任意修改,但是仅仅作用在你的本地仓库中的副本,对原作者项目没有任何影响. 
+    如果想向原作者提建议,可以直接使用,pull request操作.
+    提交完成后,原作者可以在pull request中看到你的提交.至于是否采纳,就是原作者的意愿
+</code></pre></li>
+</ol>
+<hr>
+<h2 id="u4E03-__u4E86_u89E3_-__u65B0_u4EBA_u670D_u52A1_u5668_u642D_u5EFA"><a href="#u4E03-__u4E86_u89E3_-__u65B0_u4EBA_u670D_u52A1_u5668_u642D_u5EFA" class="headerlink" title="七. 了解 - 新人服务器搭建"></a>七. 了解 - 新人服务器搭建</h2><ol>
+<li><p>新人服务器搭建概念原因?</p>
+<pre><code>概念: 搭建一个临时共享版本库, 供新人专用
+原因: 防止新人刚到时，搞乱服务器上的项目
+</code></pre></li>
+<li><p>新建一个文件夹，newBee，作为新人服务器</p>
+</li>
+<li>进入文件夹 使用git init —-bare 初始化仓库</li>
+<li>经理打开自己项目所在文件夹，执行PULL ,更新到最新</li>
+<li><p>然后source control -&gt;项目master -&gt; configure 项目</p>
+<pre><code>&gt; 选择Remotes 选项 代表当前所连的远程服务器地址
+&gt; 点击+号 添加 将newBee文件路径作为另外一个远程服务器地址 file:// 协议开头 结尾以/结尾
+&gt; Done
+</code></pre></li>
+<li><p>经理将最新代码提交到新人远程仓库</p>
+</li>
+<li>经理分配新人服务器地址给新人</li>
+<li>新人各种折腾</li>
+<li>经理建立文件夹，从新人服务器下载代码检查</li>
+<li><p>图解</p>
+<p> <img src="/./Git_Images/新人服务器搭建.png/" alt="image"></p>
+</li>
+</ol>
+<hr>
+<h2 id="u516B-__u4E86_u89E3_-_Git_u7248_u672C_u5907_u4EFD/_u5206_u652F_u7BA1_u7406"><a href="#u516B-__u4E86_u89E3_-_Git_u7248_u672C_u5907_u4EFD/_u5206_u652F_u7BA1_u7406" class="headerlink" title="八. 了解 - Git版本备份/分支管理"></a>八. 了解 - Git版本备份/分支管理</h2><p><strong> 在git中不是通过拷贝代码来解决备份和开启分支的</strong><br><strong> git 直接打标签， 通过控制head指向，来回到任一版本</strong></p>
+<h3 id="1-_u7248_u672C_u5907_u4EFD"><a href="#1-_u7248_u672C_u5907_u4EFD" class="headerlink" title="1.版本备份"></a>1.版本备份</h3><ol>
+<li><p>建立共享库</p>
+<pre><code>&gt; 创建文件夹shareWeibo
+&gt; 进入文件夹后,初始化共享库
+    git init ——bare
+</code></pre></li>
+<li><p>经理克隆项目后开发完1.0版本,打标签后,上传共享库</p>
+<pre><code>&gt; 创建manager文件夹
+&gt; 进入文件夹后
+    git clone 共享库绝对路径
+&gt; 进入工作区,配置姓名,邮箱
+    git config user.name “manager”
+    git config user.email “manager@qq.com”
+&gt; 经理创建文件,并修改部分代码,提交代码,上传到共享库,完成v1.0版本
+    touch main.c
+    open main.c:: 打开后写入abc
+    git add .
+    git commit -m “完成1.0版本开发”
+    git push
+&gt; 经理给此版本打标签,并将标签上传到共享库
+    git tag -a v1.0 -m “标记1.0版本”
+    git push origin v1.0
+&gt; 经理继续开发2.0版本......并提交
+    git add .
+    git commit -m “2.0部分功能”
+    git push
+</code></pre></li>
+</ol>
+<h3 id="2-__u5DF2_u53D1_u5E03_u7248_u672Cbug_u4FEE_u590D"><a href="#2-__u5DF2_u53D1_u5E03_u7248_u672Cbug_u4FEE_u590D" class="headerlink" title="2. 已发布版本bug修复"></a>2. 已发布版本bug修复</h3><p> <strong>在以上步骤基础上做以下操作</strong></p>
+<ol>
+<li><p>牛大克隆项目,根据1.0版本创建分支,修复bug</p>
+<pre><code>&gt; 创建niuda文件夹
+&gt; 进入文件夹后
+    git clone 共享库绝对路径
+&gt; 进入工作区,配置姓名,邮箱
+    git config user.name “niuda”
+    git config user.email “niuda@qq.com”
+&gt; 根据v1.0版本建立新分支v1.0fixbug并切换到此分支
+    git checkout v1.0 -b v1.0fixbug::
+&gt; 修复bug后提交到本地版本库
+</code></pre><p> <strong> 注意此处提交到的是HEAD指向的分支-v1.0fixbug</strong></p>
+<pre><code>git add .
+git commit -m “修复bug”
+</code></pre></li>
+<li><p>牛大修复bug后,打标签v1.1作版本备份,并上传共享库</p>
+<pre><code>git tag -a v1.1 -m “1.1版本备份”
+git push origin v1.1
+</code></pre></li>
+<li><p>牛大上传整个分支到共享版本库</p>
+<pre><code>git push origin v1.0fixbug
+</code></pre></li>
+</ol>
+<p><strong> ———至此,分支修复bug结束,下面经理要合并分支———</strong></p>
+<ol>
+<li><p>经理从共享库更新代码到本地库</p>
+<pre><code>git pull
+</code></pre></li>
+<li><p>经理查看当前服务器都有哪些分支</p>
+<pre><code>git branch -r
+</code></pre></li>
+<li><p>经理切换到master分支后,将v1.0fixbug分支合并过来</p>
+<pre><code>git checkout master
+git merge origin/v1.0fixbug -m “合并分支”
+</code></pre></li>
+<li><p>经理合并完成后提交到共享库</p>
+<pre><code>git add .
+git commit -m “合并分支”
+git push
+</code></pre></li>
+<li><p>合并完成后,可以删除共享库的分支</p>
+<pre><code>git branch -r -d origin/v1.0fixbug
+</code></pre></li>
+<li><p>查看版本标签,至此结束!!    </p>
+<pre><code>git tag
+</code></pre></li>
+</ol>
 ]]></content>
     <summary type="html">
-    <![CDATA[<ul>
-<li>开始</li>
-<li>我</li>
-<li>日记<br>categories: 日志</li>
-</ul>
-<hr>
-<p>这是<strong>新的开始</strong>，我用hexo创建了第一篇文章。</p>
-<p>通过下面的命令，就可以创建新文章</p>
-]]>
+    <![CDATA[<h2 id="u2014"><a href="#u2014" class="headerlink" title="—-"></a>—-</h2><h2 id="u4E00-__u638C_u63E1_-_git__u6982_u8FF0"><a href="#u4E00-__u]]>
     </summary>
     
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://yoursite.com/2016/01/16/hello-world/"/>
-    <id>http://yoursite.com/2016/01/16/hello-world/</id>
-    <published>2016-01-16T08:55:08.000Z</published>
-    <updated>2016-01-16T08:55:08.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
-    </summary>
+      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
     
   </entry>
   
