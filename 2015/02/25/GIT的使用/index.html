@@ -1,0 +1,1000 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-mist">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+  
+    <link href='//fonts.lug.ustc.edu.cn/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  
+
+
+<link rel="stylesheet" type="text/css" href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" />
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.2"/>
+
+
+    <meta name="description" content="Nothing in life is to be feard  it's to be understand" />
+
+
+
+  <meta name="keywords" content="git," />
+
+
+
+  <link rel="alternate" href="/atom.xml" title="HuJiawei's Blog" type="application/atom+xml" />
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+<meta name="description" content="#Git的使用git是一款开源的分布式版本控制工具
+分布式和集中式的最大区别在于：在分布式下
+
+开发者可以本地提交
+每个开发者机器上都有一个服务器的数据库
+
+##工作原理
+
+如果想了解git的工作原理，有几个核心概念必须知道
+
+工作区（Working Directory）：仓库文件夹里除.git目录以外的内容
+
+版本库（Repository）：.git目录，用于存储记录版本信息
+
+暂缓区（stag">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GIT的使用">
+<meta property="og:url" content="http://yoursite.com/2015/02/25/GIT的使用/index.html">
+<meta property="og:site_name" content="HuJiawei's Blog">
+<meta property="og:description" content="#Git的使用git是一款开源的分布式版本控制工具
+分布式和集中式的最大区别在于：在分布式下
+
+开发者可以本地提交
+每个开发者机器上都有一个服务器的数据库
+
+##工作原理
+
+如果想了解git的工作原理，有几个核心概念必须知道
+
+工作区（Working Directory）：仓库文件夹里除.git目录以外的内容
+
+版本库（Repository）：.git目录，用于存储记录版本信息
+
+暂缓区（stag">
+<meta property="og:updated_time" content="2016-02-25T15:31:31.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GIT的使用">
+<meta name="twitter:description" content="#Git的使用git是一款开源的分布式版本控制工具
+分布式和集中式的最大区别在于：在分布式下
+
+开发者可以本地提交
+每个开发者机器上都有一个服务器的数据库
+
+##工作原理
+
+如果想了解git的工作原理，有几个核心概念必须知道
+
+工作区（Working Directory）：仓库文件夹里除.git目录以外的内容
+
+版本库（Repository）：.git目录，用于存储记录版本信息
+
+暂缓区（stag">
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post'
+  };
+</script>
+
+
+
+  <title> GIT的使用 | HuJiawei's Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?1e8bd7796308703311c1df527689ee43";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">HuJiawei's Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu menu-left">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <form class="site-search-form">
+    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+  </form>
+
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'e6TysjrF-xmZySfdtcsj','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content"> 
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                GIT的使用
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-02-25T19:14:11+08:00" content="2015-02-25">
+              2015-02-25
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/02/25/GIT的使用/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/02/25/GIT的使用/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>#Git的使用<br>git是一款开源的分布式版本控制工具</p>
+<p>分布式和集中式的最大区别在于：在分布式下</p>
+<ul>
+<li>开发者可以本地提交</li>
+<li>每个开发者机器上都有一个服务器的数据库</li>
+</ul>
+<p>##工作原理</p>
+<ul>
+<li><p>如果想了解git的工作原理，有几个核心概念必须知道</p>
+<ul>
+<li><p>工作区（Working Directory）：仓库文件夹里除.git目录以外的内容</p>
+</li>
+<li><p>版本库（Repository）：.git目录，用于存储记录版本信息</p>
+<ul>
+<li><p>暂缓区（stage）</p>
+</li>
+<li><p>分支（master）：git自动创建的第一个分支</p>
+</li>
+<li>HEAD指针：用于指向当前分支</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>git add和git commit的原理</p>
+<ul>
+<li><p>git add ：把文件修改添加到暂存区</p>
+</li>
+<li><p>git commit ：把暂存区的所有内容提交到当前分支</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>工作原理:</p>
+<p>工作区的文件 –git add–&gt; 版本库的暂缓区</p>
+<p>暂缓区 –git commit–&gt; 分支</p>
+<h2 id="23_23_u521B_u5EFA_u914D_u7F6E_u4ED3_u5E93"><a href="#23_23_u521B_u5EFA_u914D_u7F6E_u4ED3_u5E93" class="headerlink" title="##创建配置仓库"></a>##创建配置仓库</h2><p>初始化本地仓库</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">git</span> init</span><br></pre></td></tr></table></figure>
+<p>配置仓库, 配置完成之后在.git的config文件查看或者通过控制台指令</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config user<span class="class">.name</span> <span class="string">"danzi"</span></span><br><span class="line">git config user<span class="class">.email</span> <span class="string">"danzi@163.com"</span></span><br><span class="line"></span><br><span class="line">git config -l</span><br></pre></td></tr></table></figure>
+<h2 id="23_23_u4E2A_u4EBA_u5F00_u53D1"><a href="#23_23_u4E2A_u4EBA_u5F00_u53D1" class="headerlink" title="##个人开发"></a>##个人开发</h2><p>###基础</p>
+<p>####文件状态</p>
+<ul>
+<li>红色: 代表被添加或者修改的文件没有被添加到暂缓区</li>
+<li>绿色: 代表文件在暂缓区,等待提交</li>
+</ul>
+<figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">status</span></span><br></pre></td></tr></table></figure>
+<p>####日志查看</p>
+<ul>
+<li>版本号是一个由SHA1生成的40位哈希值</li>
+<li>这样做的目的是保证版本号的唯一</li>
+</ul>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="command">log</span> 查看日志</span><br><span class="line">git reflog 查看指令使用记录（能够查看所有的版本号）</span><br></pre></td></tr></table></figure>
+<p>彩色日志</p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 配置</span><br><span class="line">git config --global alias.lg <span class="string">"log --color --graph --pretty=format:'<span class="variable">%Cred</span><span class="variable">%h</span><span class="variable">%Creset</span> -<span class="variable">%C</span>(yellow)<span class="variable">%d</span><span class="variable">%Creset</span> <span class="variable">%s</span> <span class="variable">%Cgreen</span>(<span class="variable">%cr</span>) <span class="variable">%C</span>(bold blue)\&lt;<span class="variable">%an</span>\&gt;<span class="variable">%Creset</span>' --abbrev-commit"</span></span><br><span class="line"></span><br><span class="line">// 使用</span><br><span class="line">git lg</span><br></pre></td></tr></table></figure>
+<h4 id="u914D_u7F6E_u522B_u540D"><a href="#u914D_u7F6E_u522B_u540D" class="headerlink" title="配置别名"></a>配置别名</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config alias<span class="class">.st</span> “status”</span><br><span class="line">git config alias<span class="class">.ci</span> “commit -m”</span><br></pre></td></tr></table></figure>
+<h4 id="u5168_u5C40_u914D_u7F6E"><a href="#u5168_u5C40_u914D_u7F6E" class="headerlink" title="全局配置"></a>全局配置</h4><ul>
+<li>–global进行全局配置,所有的版本库共享此配置</li>
+<li>查看全局配置（桌面前往-&gt;个人-&gt;.gitconfig</li>
+</ul>
+<p>###添加文件并提交</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">touch 文件</span><br><span class="line"></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"添加一个文件"</span></span></span><br></pre></td></tr></table></figure>
+<p>###修改文件并提交<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line"></span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"修改一个文件"</span></span></span><br></pre></td></tr></table></figure></p>
+<p>###删除文件并提交<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">rm</span> Dog.<span class="literal">h</span></span><br><span class="line"></span><br><span class="line">git commit -<span class="keyword">m</span> <span class="string">"通过指令删除一个文件"</span></span><br></pre></td></tr></table></figure></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"通过Finder删除一个文件后同步"</span></span></span><br></pre></td></tr></table></figure>
+<p>###版本回退</p>
+<p>####修改未提交的回退<br>重置到当前版本</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="operator"><span class="keyword">reset</span> —-hard <span class="keyword">HEAD</span></span></span><br></pre></td></tr></table></figure>
+<p>####修改且提交的回退<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="operator"><span class="keyword">reset</span> —-hard <span class="keyword">HEAD</span>^^ 重置到上上个版本(有几个^前几个版本)</span><br><span class="line">git <span class="keyword">reset</span> ——hard <span class="keyword">HEAD</span>~<span class="number">2</span> 重置到往上<span class="number">2</span>个版本</span><br><span class="line">git <span class="keyword">reset</span> —-hard 七位版本号 重置到指定版本</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="23_23_u56E2_u961F_u5F00_u53D1"><a href="#23_23_u56E2_u961F_u5F00_u53D1" class="headerlink" title="##团队开发"></a>##团队开发</h2><p><strong> 团队开发必须有一个共享库,这样成员之间才可以进行协作开发</strong></p>
+<h3 id="u57FA_u7840"><a href="#u57FA_u7840" class="headerlink" title="基础"></a>基础</h3><p>共享库分类</p>
+<ul>
+<li>本地共享库(只能在本地面对面操作)<ul>
+<li>电脑文件夹/U盘/移动硬盘</li>
+</ul>
+</li>
+<li>远程共享库(可通过网络远程操作)<ul>
+<li>自己搭建Git服务器(<strong>不建议</strong>)</li>
+<li>在Github上托管项目(<strong> 建议</strong>)<ul>
+<li>Github网址(<a href="https://github.com" target="_blank" rel="external">https://github.com</a>); 公开项目免费, 私有项目收费</li>
+</ul>
+</li>
+<li>在OSChina上托管项目(<strong> 推荐</strong>)<ul>
+<li>OSChina网址(<a href="https://git.oschina.net" target="_blank" rel="external">https://git.oschina.net</a>) 安全免费,在国内访问速度快</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>###1. 搭建本地共享库<br>原因: 多人合作开发,代码共享</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init <span class="comment">--bare</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-__u7ECF_u7406_u521D_u59CB_u5316_u9879_u76EE_u5230_u672C_u5730_u5171_u4EAB_u5E93"><a href="#2-__u7ECF_u7406_u521D_u59CB_u5316_u9879_u76EE_u5230_u672C_u5730_u5171_u4EAB_u5E93" class="headerlink" title="2. 经理初始化项目到本地共享库"></a>2. 经理初始化项目到本地共享库</h3><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">clone</span> <span class="title">本地代码仓库地址</span></span><br></pre></td></tr></table></figure>
+<h3 id="3-_u591A_u4EBA_u8FDB_u884C_u5F00_u53D1"><a href="#3-_u591A_u4EBA_u8FDB_u884C_u5F00_u53D1" class="headerlink" title="3.多人进行开发"></a>3.多人进行开发</h3><h4 id="u65B0_u5EFA_u4E24_u4E2A_u7528_u6237"><a href="#u65B0_u5EFA_u4E24_u4E2A_u7528_u6237" class="headerlink" title="新建两个用户"></a>新建两个用户</h4><p>创建经理, 葫芦娃两个文件夹, 进入文件夹从共享代码库clone到本地</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mkdir jingli</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> jingli</span><br><span class="line"></span><br><span class="line">git <span class="built_in">clone</span> 本地代码仓库地址</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mkdir huluwa</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> huluwa</span><br><span class="line"></span><br><span class="line">git <span class="built_in">clone</span> 本地代码仓库地址</span><br></pre></td></tr></table></figure>
+<h4 id="u65B0_u589E_u6587_u4EF6_u540C_u6B65"><a href="#u65B0_u589E_u6587_u4EF6_u540C_u6B65" class="headerlink" title="新增文件同步"></a>新增文件同步</h4><p>经理添加文件到工作区, 通过控制台将文件添加到暂缓区, 然后提交到共享库</p>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">touch <span class="keyword">file</span>.<span class="literal">h</span></span><br><span class="line"></span><br><span class="line">git add .     </span><br><span class="line"></span><br><span class="line">git commit -<span class="keyword">m</span> “创建文件”</span><br><span class="line"></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<p>葫芦娃从共享库更新</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">git</span> pull</span><br></pre></td></tr></table></figure>
+<h4 id="u4FEE_u6539_u6587_u4EF6_u540C_u6B65"><a href="#u4FEE_u6539_u6587_u4EF6_u540C_u6B65" class="headerlink" title="修改文件同步"></a>修改文件同步</h4><p>葫芦娃修改文件并提交到共享库</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">add</span> . </span><br><span class="line"></span><br><span class="line">git commit -m “修改文件”</span><br><span class="line"></span><br><span class="line">git <span class="keyword">push</span></span><br></pre></td></tr></table></figure>
+<p>经理从共享库更新</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">git</span> pull</span><br></pre></td></tr></table></figure>
+<p>###删除文件同步<br>经理删除文件并提交到共享库</p>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">rm</span> <span class="keyword">file</span>.<span class="literal">h</span></span><br><span class="line"></span><br><span class="line">git commit -<span class="keyword">m</span> “删除文件”</span><br><span class="line"></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<p>葫芦娃从共享库更新</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">git</span> pull</span><br></pre></td></tr></table></figure>
+<p>###解决冲突<br>经理修改文件并提交到共享库</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">add</span> .</span><br><span class="line"></span><br><span class="line">git commit -m <span class="string">"经理修改文件"</span></span><br><span class="line"></span><br><span class="line">git <span class="keyword">push</span></span><br></pre></td></tr></table></figure>
+<p>葫芦娃修改文件并提交到本地库</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line"></span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"葫芦娃修改文件"</span></span></span><br></pre></td></tr></table></figure>
+<p>葫芦娃提交共享库发生错误, fetch first 代表当前文件过期,需要从远程共享库更新 </p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">git</span> <span class="keyword">push </span>出错</span><br></pre></td></tr></table></figure>
+<p>葫芦娃重新从共享库更新本地库数据, 发生冲突, 修改冲突文件重新提交</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br><span class="line"></span><br><span class="line"><span class="comment">---修改文件, 解决冲突---</span></span><br><span class="line"></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"葫芦娃解决冲突"</span></span><br><span class="line"></span><br><span class="line">git push</span></span><br></pre></td></tr></table></figure>
+<p>###忽略文件</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">touch <span class="class">.gitignore</span></span><br><span class="line">open <span class="class">.gitignore</span> 加入需要忽略的文件名</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"添加忽略文件"</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<p>.gitignore文件配置规则, 参见<a href="http://www.cnblogs.com/haiq/archive/2012/12/26/2833746.html" target="_blank" rel="external">Git的.gitignore配置</a></p>
+<p>在真实开发中,配置.gitignore文件 ， 去github里面搜索gitignore 选择OC版本的，拷贝到本地仓库即可,记得添加到本地版本库</p>
+<h2 id="23_23git_bug_u5904_u7406"><a href="#23_23git_bug_u5904_u7406" class="headerlink" title="##git bug处理"></a>##git bug处理</h2><h3 id="u521B_u5EFA_u5171_u4EAB_u5E93"><a href="#u521B_u5EFA_u5171_u4EAB_u5E93" class="headerlink" title="创建共享库"></a>创建共享库</h3><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init <span class="comment">--bare</span></span><br></pre></td></tr></table></figure>
+<h3 id="u6B63_u5E38_u5F00_u53D1"><a href="#u6B63_u5E38_u5F00_u53D1" class="headerlink" title="正常开发"></a>正常开发</h3><p>创建经理文件夹, 克隆</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">clone</span> <span class="title">共享库地址</span></span><br></pre></td></tr></table></figure>
+<p>添加忽略文件, 提交到共享库</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">把忽略文件添加到工作区</span><br><span class="line"></span><br><span class="line">git <span class="keyword">add</span> .</span><br><span class="line"></span><br><span class="line">git commit -m <span class="string">"添加忽略文件"</span></span><br><span class="line"></span><br><span class="line">git <span class="keyword">push</span></span><br></pre></td></tr></table></figure>
+<p>Xcode创建项目, 完成功能1后提交到共享库</p>
+<p>(该步控制台操作也可通过Xcode完成)</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">项目添加到工作区(如果是xcode进行操作, 则直接添加到暂缓区)</span><br><span class="line"></span><br><span class="line">git <span class="keyword">add</span> .</span><br><span class="line"></span><br><span class="line">git commit -m <span class="string">"v1.0完成"</span></span><br><span class="line"></span><br><span class="line">git <span class="keyword">push</span></span><br></pre></td></tr></table></figure>
+<p>添加标记, 查看标记后上传到共享库</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">tag</span> <span class="title">-a</span> v1.<span class="number">0</span> -m <span class="string">"备份1.0版本"</span></span><br><span class="line"></span><br><span class="line">git <span class="keyword">tag</span></span><br><span class="line"></span><br><span class="line"><span class="title">git</span> push origin v1.<span class="number">0</span></span><br></pre></td></tr></table></figure>
+<p>###发现bug<br>开发2.0时候发现1.0有bug, 备份当前进度上传到共享库</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">开发新功能</span><br><span class="line"></span><br><span class="line">git <span class="keyword">add</span> .</span><br><span class="line"></span><br><span class="line">git commit -m <span class="string">"2.0..."</span></span><br><span class="line"></span><br><span class="line">git <span class="keyword">push</span></span><br></pre></td></tr></table></figure>
+<h3 id="u5904_u7406bug"><a href="#u5904_u7406bug" class="headerlink" title="处理bug"></a>处理bug</h3><p>创建葫芦娃文件夹, 克隆</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">clone</span> <span class="title">共享库地址</span></span><br></pre></td></tr></table></figure>
+<p>根据v1.0版本建立新分支v1.0fixbug并切换到此分支</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">git</span> checkout <span class="literal">v1</span>.<span class="number">0</span> -<span class="keyword">b </span><span class="literal">v1</span>.<span class="number">0</span>fixbug</span><br></pre></td></tr></table></figure>
+<p>解决bug后, 提交到本地库, 添加标记后上传到共享库</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">解决<span class="keyword">bug</span><br><span class="line"></span></span><br><span class="line"><span class="label">git</span> <span class="keyword">add </span>.</span><br><span class="line"></span><br><span class="line"><span class="label">git</span> commit -m <span class="string">"Fix 1.0 Bug"</span></span><br><span class="line"></span><br><span class="line"><span class="label">git</span> tag -a <span class="literal">v1</span>.<span class="number">1</span> -m <span class="string">"1.1版本备份"</span></span><br><span class="line"></span><br><span class="line"><span class="label">git</span> <span class="keyword">push </span>origin <span class="literal">v1</span>.<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>葫芦娃上传整个分支到共享库</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">git</span> <span class="keyword">push </span>origin <span class="literal">v1</span>.<span class="number">0</span>fixbug</span><br></pre></td></tr></table></figure>
+<p>###合并代码</p>
+<p>更新本地master分支</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">git</span> pull</span><br></pre></td></tr></table></figure>
+<p>合并远程v1.0fixbug分支到本地master分支</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="operator"><span class="keyword">merge</span> origin/v1<span class="number">.0</span>fixbug -<span class="keyword">m</span> <span class="string">"合并分支解决bug"</span></span></span><br></pre></td></tr></table></figure>
+<p>提交本地库上传到共享库</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">push</span></span><br></pre></td></tr></table></figure>
+<h2 id="23_u4FEE_u590D_u5DF2_u53D1_u5E03_u7248_u672Cbug_u64CD_u4F5C_u6D41_u7A0B"><a href="#23_u4FEE_u590D_u5DF2_u53D1_u5E03_u7248_u672Cbug_u64CD_u4F5C_u6D41_u7A0B" class="headerlink" title="#修复已发布版本bug操作流程"></a>#修复已发布版本bug操作流程</h2><ol>
+<li>程序员在Trunk完成1.0, 提交</li>
+</ol>
+<ul>
+<li><p>项目经理添加到tags中进行重大版本备份v1.0</p>
+</li>
+<li><p>程序员在Trunk继续开发2.0</p>
+</li>
+<li><p>1.0发现重大bug, 程序员2.0尚未完成</p>
+</li>
+<li><p>项目经理从tags的备份中拷贝一份到branch中  v1.0fixbug, 给程序员授权branch中V1.0fixbug的权限</p>
+</li>
+<li><p>程序员把目前2.0进度保存到Trunk</p>
+</li>
+<li><p>程序员debug</p>
+</li>
+<li><p>项目经理将v1.0debug添加到tags进行重大版本备份v1.1</p>
+</li>
+<li><p>项目经理从Trunk中下载一份目前2.0尚未完成的代码, 将branch中的已经debug的v1.0fixbug合并到当前2.0进度代码中</p>
+</li>
+<li><p>程序员update, 继续开发</p>
+</li>
+</ul>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/git/" rel="tag">#git</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2014/03/14/Xcode-Plugin/" rel="next" title="Xcode Plugin">
+                <i class="fa fa-chevron-left"></i> Xcode Plugin
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/09/25/HTML5/" rel="prev" title="HTML5">
+                HTML5 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+ </div>
+
+        
+            <!-- 多说热评文章-->
+            <p>热评文章</p>
+            <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+        
+
+        
+          <div class="comments" id="comments">
+            
+              <div class="ds-thread" data-thread-key="2015/02/25/GIT的使用/"
+                   data-title="GIT的使用" data-url="http://yoursite.com/2015/02/25/GIT的使用/">
+              </div>
+            
+          </div>
+        
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="https://avatars0.githubusercontent.com/u/12373088?v=3&s=460" alt="HuJiawei" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">HuJiawei</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">Nothing in life is to be feard  it's to be understand</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="menu-item-icon icon-next-feed"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/whojave" target="_blank">
+                  <i class="fa fa-github"></i> github
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/whojave" target="_blank">
+                  <i class="fa fa-twitter"></i> twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://facebook.com/whojave" target="_blank">
+                  <i class="fa fa-facebook"></i> facebook
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name">Links</p>
+            
+              <span class="links-of-author-item">
+                <a href="http://swift.gg" target="_blank">Swift</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://hexo.io" target="_blank">Hexo</a>
+              </span>
+            
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#23_23_u521B_u5EFA_u914D_u7F6E_u4ED3_u5E93"><span class="nav-number">1.</span> <span class="nav-text">##创建配置仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#23_23_u4E2A_u4EBA_u5F00_u53D1"><span class="nav-number">2.</span> <span class="nav-text">##个人开发</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u914D_u7F6E_u522B_u540D"><span class="nav-number">2.0.1.</span> <span class="nav-text">配置别名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5168_u5C40_u914D_u7F6E"><span class="nav-number">2.0.2.</span> <span class="nav-text">全局配置</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#23_23_u56E2_u961F_u5F00_u53D1"><span class="nav-number">3.</span> <span class="nav-text">##团队开发</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u57FA_u7840"><span class="nav-number">3.1.</span> <span class="nav-text">基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-__u7ECF_u7406_u521D_u59CB_u5316_u9879_u76EE_u5230_u672C_u5730_u5171_u4EAB_u5E93"><span class="nav-number">3.2.</span> <span class="nav-text">2. 经理初始化项目到本地共享库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-_u591A_u4EBA_u8FDB_u884C_u5F00_u53D1"><span class="nav-number">3.3.</span> <span class="nav-text">3.多人进行开发</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u65B0_u5EFA_u4E24_u4E2A_u7528_u6237"><span class="nav-number">3.3.1.</span> <span class="nav-text">新建两个用户</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u65B0_u589E_u6587_u4EF6_u540C_u6B65"><span class="nav-number">3.3.2.</span> <span class="nav-text">新增文件同步</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4FEE_u6539_u6587_u4EF6_u540C_u6B65"><span class="nav-number">3.3.3.</span> <span class="nav-text">修改文件同步</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#23_23git_bug_u5904_u7406"><span class="nav-number">4.</span> <span class="nav-text">##git bug处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u521B_u5EFA_u5171_u4EAB_u5E93"><span class="nav-number">4.1.</span> <span class="nav-text">创建共享库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u6B63_u5E38_u5F00_u53D1"><span class="nav-number">4.2.</span> <span class="nav-text">正常开发</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5904_u7406bug"><span class="nav-number">4.3.</span> <span class="nav-text">处理bug</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#23_u4FEE_u590D_u5DF2_u53D1_u5E03_u7248_u672Cbug_u64CD_u4F5C_u6D41_u7A0B"><span class="nav-number">5.</span> <span class="nav-text">#修复已发布版本bug操作流程</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner"> <div class="copyright" >
+  
+  &copy;  2014 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">HuJiawei</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+ </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"whojave"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+
+
+    
+  
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.2" id="motion.global"></script>
+
+
+
+
+  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 0.4 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    var $tocContent = $('.post-toc-content');
+    if (isDesktop() && CONFIG.sidebar === 'post') {
+      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+        displaySidebar();
+      }
+    }
+  });
+</script>
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+      if (isMobile()) {
+        FastClick.attach(document.body);
+      }
+
+      motionIntegrator.bootstrap();
+    });
+  </script>
+
+  
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+
+  
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/MathJax.js"></script>
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/config/TeX-AMS-MML_HTMLorMML.js"></script>
+  
+
+
+  
+  
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"3","bdPos":"left","bdTop":"250"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+  
+  <script type="text/javascript" src="/js/lazyload.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#posts").find('img').lazyload({
+        placeholder: "/images/loading.gif",
+        effect: "fadeIn"
+      });
+    });
+  </script>
+</body>
+</html>
