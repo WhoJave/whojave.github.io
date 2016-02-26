@@ -32,7 +32,7 @@
 <link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.2"/>
 
 
-    <meta name="description" content="Nothing in life is to be feard  it's to be understand" />
+    <meta name="description" content="Nothing in life is to be feared , it's to be understand" />
 
 
 
@@ -47,58 +47,55 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="#Git的使用git是一款开源的分布式版本控制工具
+<meta name="description" content="Git的使用git是一款开源的分布式版本控制工具
 分布式和集中式的最大区别在于：在分布式下
 
 开发者可以本地提交
 每个开发者机器上都有一个服务器的数据库
 
-##工作原理
-
+工作原理
 如果想了解git的工作原理，有几个核心概念必须知道
 
 工作区（Working Directory）：仓库文件夹里除.git目录以外的内容
 
 版本库（Repository）：.git目录，用于存储记录版本信息
 
-暂缓区（stag">
+暂缓区（stage）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GIT的使用">
 <meta property="og:url" content="http://yoursite.com/2015/02/25/GIT的使用/index.html">
 <meta property="og:site_name" content="HuJiawei's Blog">
-<meta property="og:description" content="#Git的使用git是一款开源的分布式版本控制工具
+<meta property="og:description" content="Git的使用git是一款开源的分布式版本控制工具
 分布式和集中式的最大区别在于：在分布式下
 
 开发者可以本地提交
 每个开发者机器上都有一个服务器的数据库
 
-##工作原理
-
+工作原理
 如果想了解git的工作原理，有几个核心概念必须知道
 
 工作区（Working Directory）：仓库文件夹里除.git目录以外的内容
 
 版本库（Repository）：.git目录，用于存储记录版本信息
 
-暂缓区（stag">
-<meta property="og:updated_time" content="2016-02-25T15:31:31.000Z">
+暂缓区（stage）">
+<meta property="og:updated_time" content="2016-02-26T03:56:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GIT的使用">
-<meta name="twitter:description" content="#Git的使用git是一款开源的分布式版本控制工具
+<meta name="twitter:description" content="Git的使用git是一款开源的分布式版本控制工具
 分布式和集中式的最大区别在于：在分布式下
 
 开发者可以本地提交
 每个开发者机器上都有一个服务器的数据库
 
-##工作原理
-
+工作原理
 如果想了解git的工作原理，有几个核心概念必须知道
 
 工作区（Working Directory）：仓库文件夹里除.git目录以外的内容
 
 版本库（Repository）：.git目录，用于存储记录版本信息
 
-暂缓区（stag">
+暂缓区（stage）">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -316,14 +313,13 @@
       
 
       
-        <span itemprop="articleBody"><p>#Git的使用<br>git是一款开源的分布式版本控制工具</p>
+        <span itemprop="articleBody"><h1 id="Git_u7684_u4F7F_u7528"><a href="#Git_u7684_u4F7F_u7528" class="headerlink" title="Git的使用"></a>Git的使用</h1><p>git是一款开源的分布式版本控制工具</p>
 <p>分布式和集中式的最大区别在于：在分布式下</p>
 <ul>
 <li>开发者可以本地提交</li>
 <li>每个开发者机器上都有一个服务器的数据库</li>
 </ul>
-<p>##工作原理</p>
-<ul>
+<h2 id="u5DE5_u4F5C_u539F_u7406"><a href="#u5DE5_u4F5C_u539F_u7406" class="headerlink" title="工作原理"></a>工作原理</h2><ul>
 <li><p>如果想了解git的工作原理，有几个核心概念必须知道</p>
 <ul>
 <li><p>工作区（Working Directory）：仓库文件夹里除.git目录以外的内容</p>
@@ -351,19 +347,18 @@
 <p>工作原理:</p>
 <p>工作区的文件 –git add–&gt; 版本库的暂缓区</p>
 <p>暂缓区 –git commit–&gt; 分支</p>
-<h2 id="23_23_u521B_u5EFA_u914D_u7F6E_u4ED3_u5E93"><a href="#23_23_u521B_u5EFA_u914D_u7F6E_u4ED3_u5E93" class="headerlink" title="##创建配置仓库"></a>##创建配置仓库</h2><p>初始化本地仓库</p>
+<h2 id="u521B_u5EFA_u914D_u7F6E_u4ED3_u5E93"><a href="#u521B_u5EFA_u914D_u7F6E_u4ED3_u5E93" class="headerlink" title="创建配置仓库"></a>创建配置仓库</h2><hr>
+<p>初始化本地仓库</p>
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">git</span> init</span><br></pre></td></tr></table></figure>
 <p>配置仓库, 配置完成之后在.git的config文件查看或者通过控制台指令</p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config user<span class="class">.name</span> <span class="string">"danzi"</span></span><br><span class="line">git config user<span class="class">.email</span> <span class="string">"danzi@163.com"</span></span><br><span class="line"></span><br><span class="line">git config -l</span><br></pre></td></tr></table></figure>
-<h2 id="23_23_u4E2A_u4EBA_u5F00_u53D1"><a href="#23_23_u4E2A_u4EBA_u5F00_u53D1" class="headerlink" title="##个人开发"></a>##个人开发</h2><p>###基础</p>
-<p>####文件状态</p>
-<ul>
+<h2 id="u4E2A_u4EBA_u5F00_u53D1"><a href="#u4E2A_u4EBA_u5F00_u53D1" class="headerlink" title="个人开发"></a>个人开发</h2><hr>
+<h3 id="u57FA_u7840"><a href="#u57FA_u7840" class="headerlink" title="基础"></a>基础</h3><h4 id="u6587_u4EF6_u72B6_u6001"><a href="#u6587_u4EF6_u72B6_u6001" class="headerlink" title="文件状态"></a>文件状态</h4><ul>
 <li>红色: 代表被添加或者修改的文件没有被添加到暂缓区</li>
 <li>绿色: 代表文件在暂缓区,等待提交</li>
 </ul>
 <figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">status</span></span><br></pre></td></tr></table></figure>
-<p>####日志查看</p>
-<ul>
+<h4 id="u65E5_u5FD7_u67E5_u770B"><a href="#u65E5_u5FD7_u67E5_u770B" class="headerlink" title="日志查看"></a>日志查看</h4><ul>
 <li>版本号是一个由SHA1生成的40位哈希值</li>
 <li>这样做的目的是保证版本号的唯一</li>
 </ul>
@@ -375,17 +370,16 @@
 <li>–global进行全局配置,所有的版本库共享此配置</li>
 <li>查看全局配置（桌面前往-&gt;个人-&gt;.gitconfig</li>
 </ul>
-<p>###添加文件并提交</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">touch 文件</span><br><span class="line"></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"添加一个文件"</span></span></span><br></pre></td></tr></table></figure>
-<p>###修改文件并提交<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line"></span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"修改一个文件"</span></span></span><br></pre></td></tr></table></figure></p>
-<p>###删除文件并提交<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">rm</span> Dog.<span class="literal">h</span></span><br><span class="line"></span><br><span class="line">git commit -<span class="keyword">m</span> <span class="string">"通过指令删除一个文件"</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="u6DFB_u52A0_u6587_u4EF6_u5E76_u63D0_u4EA4"><a href="#u6DFB_u52A0_u6587_u4EF6_u5E76_u63D0_u4EA4" class="headerlink" title="添加文件并提交"></a>添加文件并提交</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">touch 文件</span><br><span class="line"></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"添加一个文件"</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="u4FEE_u6539_u6587_u4EF6_u5E76_u63D0_u4EA4"><a href="#u4FEE_u6539_u6587_u4EF6_u5E76_u63D0_u4EA4" class="headerlink" title="修改文件并提交"></a>修改文件并提交</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line"></span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"修改一个文件"</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="u5220_u9664_u6587_u4EF6_u5E76_u63D0_u4EA4"><a href="#u5220_u9664_u6587_u4EF6_u5E76_u63D0_u4EA4" class="headerlink" title="删除文件并提交"></a>删除文件并提交</h3><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">rm</span> Dog.<span class="literal">h</span></span><br><span class="line"></span><br><span class="line">git commit -<span class="keyword">m</span> <span class="string">"通过指令删除一个文件"</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"通过Finder删除一个文件后同步"</span></span></span><br></pre></td></tr></table></figure>
-<p>###版本回退</p>
-<p>####修改未提交的回退<br>重置到当前版本</p>
+<h3 id="u7248_u672C_u56DE_u9000"><a href="#u7248_u672C_u56DE_u9000" class="headerlink" title="版本回退"></a>版本回退</h3><h4 id="u4FEE_u6539_u672A_u63D0_u4EA4_u7684_u56DE_u9000"><a href="#u4FEE_u6539_u672A_u63D0_u4EA4_u7684_u56DE_u9000" class="headerlink" title="修改未提交的回退"></a>修改未提交的回退</h4><p>重置到当前版本</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="operator"><span class="keyword">reset</span> —-hard <span class="keyword">HEAD</span></span></span><br></pre></td></tr></table></figure>
-<p>####修改且提交的回退<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="operator"><span class="keyword">reset</span> —-hard <span class="keyword">HEAD</span>^^ 重置到上上个版本(有几个^前几个版本)</span><br><span class="line">git <span class="keyword">reset</span> ——hard <span class="keyword">HEAD</span>~<span class="number">2</span> 重置到往上<span class="number">2</span>个版本</span><br><span class="line">git <span class="keyword">reset</span> —-hard 七位版本号 重置到指定版本</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="23_23_u56E2_u961F_u5F00_u53D1"><a href="#23_23_u56E2_u961F_u5F00_u53D1" class="headerlink" title="##团队开发"></a>##团队开发</h2><p><strong> 团队开发必须有一个共享库,这样成员之间才可以进行协作开发</strong></p>
-<h3 id="u57FA_u7840"><a href="#u57FA_u7840" class="headerlink" title="基础"></a>基础</h3><p>共享库分类</p>
+<h4 id="u4FEE_u6539_u4E14_u63D0_u4EA4_u7684_u56DE_u9000"><a href="#u4FEE_u6539_u4E14_u63D0_u4EA4_u7684_u56DE_u9000" class="headerlink" title="修改且提交的回退"></a>修改且提交的回退</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="operator"><span class="keyword">reset</span> —-hard <span class="keyword">HEAD</span>^^ 重置到上上个版本(有几个^前几个版本)</span><br><span class="line">git <span class="keyword">reset</span> ——hard <span class="keyword">HEAD</span>~<span class="number">2</span> 重置到往上<span class="number">2</span>个版本</span><br><span class="line">git <span class="keyword">reset</span> —-hard 七位版本号 重置到指定版本</span></span><br></pre></td></tr></table></figure>
+<h2 id="u56E2_u961F_u5F00_u53D1"><a href="#u56E2_u961F_u5F00_u53D1" class="headerlink" title="团队开发"></a>团队开发</h2><hr>
+<p><strong> 团队开发必须有一个共享库,这样成员之间才可以进行协作开发</strong></p>
+<h3 id="u57FA_u7840-1"><a href="#u57FA_u7840-1" class="headerlink" title="基础"></a>基础</h3><p>共享库分类</p>
 <ul>
 <li>本地共享库(只能在本地面对面操作)<ul>
 <li>电脑文件夹/U盘/移动硬盘</li>
@@ -404,7 +398,7 @@
 </ul>
 </li>
 </ul>
-<p>###1. 搭建本地共享库<br>原因: 多人合作开发,代码共享</p>
+<h3 id="1-__u642D_u5EFA_u672C_u5730_u5171_u4EAB_u5E93"><a href="#1-__u642D_u5EFA_u672C_u5730_u5171_u4EAB_u5E93" class="headerlink" title="1. 搭建本地共享库"></a>1. 搭建本地共享库</h3><p>原因: 多人合作开发,代码共享</p>
 <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init <span class="comment">--bare</span></span><br></pre></td></tr></table></figure>
 <h3 id="2-__u7ECF_u7406_u521D_u59CB_u5316_u9879_u76EE_u5230_u672C_u5730_u5171_u4EAB_u5E93"><a href="#2-__u7ECF_u7406_u521D_u59CB_u5316_u9879_u76EE_u5230_u672C_u5730_u5171_u4EAB_u5E93" class="headerlink" title="2. 经理初始化项目到本地共享库"></a>2. 经理初始化项目到本地共享库</h3><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">clone</span> <span class="title">本地代码仓库地址</span></span><br></pre></td></tr></table></figure>
 <h3 id="3-_u591A_u4EBA_u8FDB_u884C_u5F00_u53D1"><a href="#3-_u591A_u4EBA_u8FDB_u884C_u5F00_u53D1" class="headerlink" title="3.多人进行开发"></a>3.多人进行开发</h3><h4 id="u65B0_u5EFA_u4E24_u4E2A_u7528_u6237"><a href="#u65B0_u5EFA_u4E24_u4E2A_u7528_u6237" class="headerlink" title="新建两个用户"></a>新建两个用户</h4><p>创建经理, 葫芦娃两个文件夹, 进入文件夹从共享代码库clone到本地</p>
@@ -418,11 +412,11 @@
 <figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">add</span> . </span><br><span class="line"></span><br><span class="line">git commit -m “修改文件”</span><br><span class="line"></span><br><span class="line">git <span class="keyword">push</span></span><br></pre></td></tr></table></figure>
 <p>经理从共享库更新</p>
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">git</span> pull</span><br></pre></td></tr></table></figure>
-<p>###删除文件同步<br>经理删除文件并提交到共享库</p>
+<h3 id="u5220_u9664_u6587_u4EF6_u540C_u6B65"><a href="#u5220_u9664_u6587_u4EF6_u540C_u6B65" class="headerlink" title="删除文件同步"></a>删除文件同步</h3><p>经理删除文件并提交到共享库</p>
 <figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">rm</span> <span class="keyword">file</span>.<span class="literal">h</span></span><br><span class="line"></span><br><span class="line">git commit -<span class="keyword">m</span> “删除文件”</span><br><span class="line"></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
 <p>葫芦娃从共享库更新</p>
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">git</span> pull</span><br></pre></td></tr></table></figure>
-<p>###解决冲突<br>经理修改文件并提交到共享库</p>
+<h3 id="u89E3_u51B3_u51B2_u7A81"><a href="#u89E3_u51B3_u51B2_u7A81" class="headerlink" title="解决冲突"></a>解决冲突</h3><p>经理修改文件并提交到共享库</p>
 <figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">add</span> .</span><br><span class="line"></span><br><span class="line">git commit -m <span class="string">"经理修改文件"</span></span><br><span class="line"></span><br><span class="line">git <span class="keyword">push</span></span><br></pre></td></tr></table></figure>
 <p>葫芦娃修改文件并提交到本地库</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line"></span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"葫芦娃修改文件"</span></span></span><br></pre></td></tr></table></figure>
@@ -430,11 +424,11 @@
 <figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">git</span> <span class="keyword">push </span>出错</span><br></pre></td></tr></table></figure>
 <p>葫芦娃重新从共享库更新本地库数据, 发生冲突, 修改冲突文件重新提交</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br><span class="line"></span><br><span class="line"><span class="comment">---修改文件, 解决冲突---</span></span><br><span class="line"></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"葫芦娃解决冲突"</span></span><br><span class="line"></span><br><span class="line">git push</span></span><br></pre></td></tr></table></figure>
-<p>###忽略文件</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">touch <span class="class">.gitignore</span></span><br><span class="line">open <span class="class">.gitignore</span> 加入需要忽略的文件名</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"添加忽略文件"</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<h3 id="u5FFD_u7565_u6587_u4EF6"><a href="#u5FFD_u7565_u6587_u4EF6" class="headerlink" title="忽略文件"></a>忽略文件</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">touch <span class="class">.gitignore</span></span><br><span class="line">open <span class="class">.gitignore</span> 加入需要忽略的文件名</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"添加忽略文件"</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
 <p>.gitignore文件配置规则, 参见<a href="http://www.cnblogs.com/haiq/archive/2012/12/26/2833746.html" target="_blank" rel="external">Git的.gitignore配置</a></p>
 <p>在真实开发中,配置.gitignore文件 ， 去github里面搜索gitignore 选择OC版本的，拷贝到本地仓库即可,记得添加到本地版本库</p>
-<h2 id="23_23git_bug_u5904_u7406"><a href="#23_23git_bug_u5904_u7406" class="headerlink" title="##git bug处理"></a>##git bug处理</h2><h3 id="u521B_u5EFA_u5171_u4EAB_u5E93"><a href="#u521B_u5EFA_u5171_u4EAB_u5E93" class="headerlink" title="创建共享库"></a>创建共享库</h3><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init <span class="comment">--bare</span></span><br></pre></td></tr></table></figure>
+<h2 id="git_bug_u5904_u7406"><a href="#git_bug_u5904_u7406" class="headerlink" title="git bug处理"></a>git bug处理</h2><hr>
+<h3 id="u521B_u5EFA_u5171_u4EAB_u5E93"><a href="#u521B_u5EFA_u5171_u4EAB_u5E93" class="headerlink" title="创建共享库"></a>创建共享库</h3><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init <span class="comment">--bare</span></span><br></pre></td></tr></table></figure>
 <h3 id="u6B63_u5E38_u5F00_u53D1"><a href="#u6B63_u5E38_u5F00_u53D1" class="headerlink" title="正常开发"></a>正常开发</h3><p>创建经理文件夹, 克隆</p>
 <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">clone</span> <span class="title">共享库地址</span></span><br></pre></td></tr></table></figure>
 <p>添加忽略文件, 提交到共享库</p>
@@ -444,7 +438,7 @@
 <figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">项目添加到工作区(如果是xcode进行操作, 则直接添加到暂缓区)</span><br><span class="line"></span><br><span class="line">git <span class="keyword">add</span> .</span><br><span class="line"></span><br><span class="line">git commit -m <span class="string">"v1.0完成"</span></span><br><span class="line"></span><br><span class="line">git <span class="keyword">push</span></span><br></pre></td></tr></table></figure>
 <p>添加标记, 查看标记后上传到共享库</p>
 <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">tag</span> <span class="title">-a</span> v1.<span class="number">0</span> -m <span class="string">"备份1.0版本"</span></span><br><span class="line"></span><br><span class="line">git <span class="keyword">tag</span></span><br><span class="line"></span><br><span class="line"><span class="title">git</span> push origin v1.<span class="number">0</span></span><br></pre></td></tr></table></figure>
-<p>###发现bug<br>开发2.0时候发现1.0有bug, 备份当前进度上传到共享库</p>
+<h3 id="u53D1_u73B0bug"><a href="#u53D1_u73B0bug" class="headerlink" title="发现bug"></a>发现bug</h3><p>开发2.0时候发现1.0有bug, 备份当前进度上传到共享库</p>
 <figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">开发新功能</span><br><span class="line"></span><br><span class="line">git <span class="keyword">add</span> .</span><br><span class="line"></span><br><span class="line">git commit -m <span class="string">"2.0..."</span></span><br><span class="line"></span><br><span class="line">git <span class="keyword">push</span></span><br></pre></td></tr></table></figure>
 <h3 id="u5904_u7406bug"><a href="#u5904_u7406bug" class="headerlink" title="处理bug"></a>处理bug</h3><p>创建葫芦娃文件夹, 克隆</p>
 <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">clone</span> <span class="title">共享库地址</span></span><br></pre></td></tr></table></figure>
@@ -454,14 +448,14 @@
 <figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">解决<span class="keyword">bug</span><br><span class="line"></span></span><br><span class="line"><span class="label">git</span> <span class="keyword">add </span>.</span><br><span class="line"></span><br><span class="line"><span class="label">git</span> commit -m <span class="string">"Fix 1.0 Bug"</span></span><br><span class="line"></span><br><span class="line"><span class="label">git</span> tag -a <span class="literal">v1</span>.<span class="number">1</span> -m <span class="string">"1.1版本备份"</span></span><br><span class="line"></span><br><span class="line"><span class="label">git</span> <span class="keyword">push </span>origin <span class="literal">v1</span>.<span class="number">1</span></span><br></pre></td></tr></table></figure>
 <p>葫芦娃上传整个分支到共享库</p>
 <figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">git</span> <span class="keyword">push </span>origin <span class="literal">v1</span>.<span class="number">0</span>fixbug</span><br></pre></td></tr></table></figure>
-<p>###合并代码</p>
-<p>更新本地master分支</p>
+<h3 id="u5408_u5E76_u4EE3_u7801"><a href="#u5408_u5E76_u4EE3_u7801" class="headerlink" title="合并代码"></a>合并代码</h3><p>更新本地master分支</p>
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">git</span> pull</span><br></pre></td></tr></table></figure>
 <p>合并远程v1.0fixbug分支到本地master分支</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="operator"><span class="keyword">merge</span> origin/v1<span class="number">.0</span>fixbug -<span class="keyword">m</span> <span class="string">"合并分支解决bug"</span></span></span><br></pre></td></tr></table></figure>
 <p>提交本地库上传到共享库</p>
 <figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">push</span></span><br></pre></td></tr></table></figure>
-<h2 id="23_u4FEE_u590D_u5DF2_u53D1_u5E03_u7248_u672Cbug_u64CD_u4F5C_u6D41_u7A0B"><a href="#23_u4FEE_u590D_u5DF2_u53D1_u5E03_u7248_u672Cbug_u64CD_u4F5C_u6D41_u7A0B" class="headerlink" title="#修复已发布版本bug操作流程"></a>#修复已发布版本bug操作流程</h2><ol>
+<h1 id="u4FEE_u590D_u5DF2_u53D1_u5E03_u7248_u672Cbug_u64CD_u4F5C_u6D41_u7A0B"><a href="#u4FEE_u590D_u5DF2_u53D1_u5E03_u7248_u672Cbug_u64CD_u4F5C_u6D41_u7A0B" class="headerlink" title="修复已发布版本bug操作流程"></a>修复已发布版本bug操作流程</h1><hr>
+<ol>
 <li>程序员在Trunk完成1.0, 提交</li>
 </ol>
 <ul>
@@ -603,7 +597,7 @@
           <img class="site-author-image" src="https://avatars0.githubusercontent.com/u/12373088?v=3&s=460" alt="HuJiawei" itemprop="image"/>
           <p class="site-author-name" itemprop="name">HuJiawei</p>
         </div>
-        <p class="site-description motion-element" itemprop="description">Nothing in life is to be feard  it's to be understand</p>
+        <p class="site-description motion-element" itemprop="description">Nothing in life is to be feared , it's to be understand</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
@@ -687,7 +681,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#23_23_u521B_u5EFA_u914D_u7F6E_u4ED3_u5E93"><span class="nav-number">1.</span> <span class="nav-text">##创建配置仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#23_23_u4E2A_u4EBA_u5F00_u53D1"><span class="nav-number">2.</span> <span class="nav-text">##个人开发</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u914D_u7F6E_u522B_u540D"><span class="nav-number">2.0.1.</span> <span class="nav-text">配置别名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5168_u5C40_u914D_u7F6E"><span class="nav-number">2.0.2.</span> <span class="nav-text">全局配置</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#23_23_u56E2_u961F_u5F00_u53D1"><span class="nav-number">3.</span> <span class="nav-text">##团队开发</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u57FA_u7840"><span class="nav-number">3.1.</span> <span class="nav-text">基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-__u7ECF_u7406_u521D_u59CB_u5316_u9879_u76EE_u5230_u672C_u5730_u5171_u4EAB_u5E93"><span class="nav-number">3.2.</span> <span class="nav-text">2. 经理初始化项目到本地共享库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-_u591A_u4EBA_u8FDB_u884C_u5F00_u53D1"><span class="nav-number">3.3.</span> <span class="nav-text">3.多人进行开发</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u65B0_u5EFA_u4E24_u4E2A_u7528_u6237"><span class="nav-number">3.3.1.</span> <span class="nav-text">新建两个用户</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u65B0_u589E_u6587_u4EF6_u540C_u6B65"><span class="nav-number">3.3.2.</span> <span class="nav-text">新增文件同步</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4FEE_u6539_u6587_u4EF6_u540C_u6B65"><span class="nav-number">3.3.3.</span> <span class="nav-text">修改文件同步</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#23_23git_bug_u5904_u7406"><span class="nav-number">4.</span> <span class="nav-text">##git bug处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u521B_u5EFA_u5171_u4EAB_u5E93"><span class="nav-number">4.1.</span> <span class="nav-text">创建共享库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u6B63_u5E38_u5F00_u53D1"><span class="nav-number">4.2.</span> <span class="nav-text">正常开发</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5904_u7406bug"><span class="nav-number">4.3.</span> <span class="nav-text">处理bug</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#23_u4FEE_u590D_u5DF2_u53D1_u5E03_u7248_u672Cbug_u64CD_u4F5C_u6D41_u7A0B"><span class="nav-number">5.</span> <span class="nav-text">#修复已发布版本bug操作流程</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git_u7684_u4F7F_u7528"><span class="nav-number">1.</span> <span class="nav-text">Git的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#u5DE5_u4F5C_u539F_u7406"><span class="nav-number">1.1.</span> <span class="nav-text">工作原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u521B_u5EFA_u914D_u7F6E_u4ED3_u5E93"><span class="nav-number">1.2.</span> <span class="nav-text">创建配置仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u4E2A_u4EBA_u5F00_u53D1"><span class="nav-number">1.3.</span> <span class="nav-text">个人开发</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u57FA_u7840"><span class="nav-number">1.3.1.</span> <span class="nav-text">基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u6587_u4EF6_u72B6_u6001"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">文件状态</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u65E5_u5FD7_u67E5_u770B"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">日志查看</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u914D_u7F6E_u522B_u540D"><span class="nav-number">1.3.1.3.</span> <span class="nav-text">配置别名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5168_u5C40_u914D_u7F6E"><span class="nav-number">1.3.1.4.</span> <span class="nav-text">全局配置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u6DFB_u52A0_u6587_u4EF6_u5E76_u63D0_u4EA4"><span class="nav-number">1.3.2.</span> <span class="nav-text">添加文件并提交</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4FEE_u6539_u6587_u4EF6_u5E76_u63D0_u4EA4"><span class="nav-number">1.3.3.</span> <span class="nav-text">修改文件并提交</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5220_u9664_u6587_u4EF6_u5E76_u63D0_u4EA4"><span class="nav-number">1.3.4.</span> <span class="nav-text">删除文件并提交</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u7248_u672C_u56DE_u9000"><span class="nav-number">1.3.5.</span> <span class="nav-text">版本回退</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u4FEE_u6539_u672A_u63D0_u4EA4_u7684_u56DE_u9000"><span class="nav-number">1.3.5.1.</span> <span class="nav-text">修改未提交的回退</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4FEE_u6539_u4E14_u63D0_u4EA4_u7684_u56DE_u9000"><span class="nav-number">1.3.5.2.</span> <span class="nav-text">修改且提交的回退</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u56E2_u961F_u5F00_u53D1"><span class="nav-number">1.4.</span> <span class="nav-text">团队开发</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u57FA_u7840-1"><span class="nav-number">1.4.1.</span> <span class="nav-text">基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-__u642D_u5EFA_u672C_u5730_u5171_u4EAB_u5E93"><span class="nav-number">1.4.2.</span> <span class="nav-text">1. 搭建本地共享库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-__u7ECF_u7406_u521D_u59CB_u5316_u9879_u76EE_u5230_u672C_u5730_u5171_u4EAB_u5E93"><span class="nav-number">1.4.3.</span> <span class="nav-text">2. 经理初始化项目到本地共享库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-_u591A_u4EBA_u8FDB_u884C_u5F00_u53D1"><span class="nav-number">1.4.4.</span> <span class="nav-text">3.多人进行开发</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u65B0_u5EFA_u4E24_u4E2A_u7528_u6237"><span class="nav-number">1.4.4.1.</span> <span class="nav-text">新建两个用户</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u65B0_u589E_u6587_u4EF6_u540C_u6B65"><span class="nav-number">1.4.4.2.</span> <span class="nav-text">新增文件同步</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4FEE_u6539_u6587_u4EF6_u540C_u6B65"><span class="nav-number">1.4.4.3.</span> <span class="nav-text">修改文件同步</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5220_u9664_u6587_u4EF6_u540C_u6B65"><span class="nav-number">1.4.5.</span> <span class="nav-text">删除文件同步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u89E3_u51B3_u51B2_u7A81"><span class="nav-number">1.4.6.</span> <span class="nav-text">解决冲突</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5FFD_u7565_u6587_u4EF6"><span class="nav-number">1.4.7.</span> <span class="nav-text">忽略文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git_bug_u5904_u7406"><span class="nav-number">1.5.</span> <span class="nav-text">git bug处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u521B_u5EFA_u5171_u4EAB_u5E93"><span class="nav-number">1.5.1.</span> <span class="nav-text">创建共享库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u6B63_u5E38_u5F00_u53D1"><span class="nav-number">1.5.2.</span> <span class="nav-text">正常开发</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u53D1_u73B0bug"><span class="nav-number">1.5.3.</span> <span class="nav-text">发现bug</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5904_u7406bug"><span class="nav-number">1.5.4.</span> <span class="nav-text">处理bug</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5408_u5E76_u4EE3_u7801"><span class="nav-number">1.5.5.</span> <span class="nav-text">合并代码</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4FEE_u590D_u5DF2_u53D1_u5E03_u7248_u672Cbug_u64CD_u4F5C_u6D41_u7A0B"><span class="nav-number">2.</span> <span class="nav-text">修复已发布版本bug操作流程</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
