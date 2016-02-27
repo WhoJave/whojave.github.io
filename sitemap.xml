@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/guestbook/index.html</loc>
+    <lastmod>2016-02-27T08:29:38.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2015/09/25/HTML5/</loc>
     <lastmod>2016-02-26T15:40:34.000Z</lastmod>
   </url>
