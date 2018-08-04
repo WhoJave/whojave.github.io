@@ -10,5 +10,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://hujiawei.net/sitemap.xml
-Sitemap: http://hujiawei.net/baidusitemap.xml
+Sitemap: http://freestyler.pub/sitemap.xml
+Sitemap: http://freestyler.pub/baidusitemap.xml
