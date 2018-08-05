@@ -2,6 +2,8 @@
 User-agent: *
 Allow: /
 Allow: /archives/
+Allow: /categories/
+Allow: /tags/ 
 
 Disallow: /vendors/
 Disallow: /js/
@@ -10,5 +12,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://freestyler.pub/sitemap.xml
-Sitemap: http://freestyler.pub/baidusitemap.xml
+Sitemap: https://onepiece.fun/sitemap.xml
+Sitemap: https://onepiece.fun/baidusitemap.xml
