@@ -277,11 +277,11 @@ KSImageNamedgithub: https://github.com/ksuther/KSImageNamed-Xc">
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2014/03/14/Xcode-Plugin/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2014/03/14/Xcode-Plugin/" itemprop="commentsCount"></span>
-                </a>
-              </span>
+              &nbsp; | &nbsp;
+              <a href="/2014/03/14/Xcode-Plugin/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014/03/14/Xcode-Plugin/" itemprop="commentsCount"></span>
+              </a>
+            </span>
             
           
 
@@ -376,8 +376,8 @@ KSImageNamedgithub: https://github.com/ksuther/KSImageNamed-Xc">
         
           <div class="comments" id="comments">
             
-              <div class="ds-thread" data-thread-key="2014/03/14/Xcode-Plugin/"
-                   data-title="Xcode Plugin" data-url="http://yoursite.com/2014/03/14/Xcode-Plugin/">
+              <div id="disqus_thread">
+                <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
               </div>
             
           </div>
@@ -523,7 +523,7 @@ KSImageNamedgithub: https://github.com/ksuther/KSImageNamed-Xc">
     <footer id="footer" class="footer">
       <div class="footer-inner"> <div class="copyright" >
   
-  &copy;  2014 - 
+  &copy;  2015 - 
   <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="icon-next-heart fa fa-heart"></i>
@@ -555,26 +555,32 @@ KSImageNamedgithub: https://github.com/ksuther/KSImageNamed-Xc">
   
   
     
+    
 
   
-    
+
+    <script type="text/javascript">
+      var disqus_shortname = 'onepiecefun';
+      var disqus_identifier = '2014/03/14/Xcode-Plugin/';
+      var disqus_title = 'Xcode Plugin';
+      var disqus_url = 'http://yoursite.com/2014/03/14/Xcode-Plugin/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
   
 
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"whojave"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-    
 
-    
   
   
   <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
