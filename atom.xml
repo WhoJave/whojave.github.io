@@ -3,9 +3,9 @@
   <title><![CDATA[OnePiece's Blog]]></title>
   
   <link href="/atom.xml" rel="self"/>
-  <link href="https://onepiece.com/"/>
+  <link href="https://onepiece.fun/"/>
   <updated>2018-08-05T13:12:06.192Z</updated>
-  <id>https://onepiece.com/</id>
+  <id>https://onepiece.fun/</id>
   
   <author>
     <name><![CDATA[OnePiece]]></name>
@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[AppleId转美区(无需信用卡)]]></title>
-    <link href="https://onepiece.com/2018/08/04/AppleId%E8%BD%AC%E7%BE%8E%E5%8C%BA-%E6%97%A0%E9%9C%80%E4%BF%A1%E7%94%A8%E5%8D%A1/"/>
-    <id>https://onepiece.com/2018/08/04/AppleId转美区-无需信用卡/</id>
+    <link href="https://onepiece.fun/2018/08/04/AppleId%E8%BD%AC%E7%BE%8E%E5%8C%BA-%E6%97%A0%E9%9C%80%E4%BF%A1%E7%94%A8%E5%8D%A1/"/>
+    <id>https://onepiece.fun/2018/08/04/AppleId转美区-无需信用卡/</id>
     <published>2018-08-04T14:27:06.000Z</published>
     <updated>2018-08-05T13:12:06.192Z</updated>
     <content type="html"><![CDATA[<p>很多小伙伴有下载美区的App的需求，但因AppleId申请麻烦的问题可能就去淘宝买ID了，现在给大家分享一下转区方法</p>
@@ -34,14 +34,14 @@
 <p><strong><em>前提</em></strong>：需要美区IP地址，可以使用美区的梯子全局代理即可，可访问<a href="https]]>
     </summary>
     
-      <category term="AppleId" scheme="https://onepiece.com/tags/AppleId/"/>
+      <category term="AppleId" scheme="https://onepiece.fun/tags/AppleId/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[UIWebView加载本地html及js文件]]></title>
-    <link href="https://onepiece.com/2018/08/04/UIWebView%E5%8A%A0%E8%BD%BD%E6%9C%AC%E5%9C%B0html%E5%8F%8Ajs%E6%96%87%E4%BB%B6/"/>
-    <id>https://onepiece.com/2018/08/04/UIWebView加载本地html及js文件/</id>
+    <link href="https://onepiece.fun/2018/08/04/UIWebView%E5%8A%A0%E8%BD%BD%E6%9C%AC%E5%9C%B0html%E5%8F%8Ajs%E6%96%87%E4%BB%B6/"/>
+    <id>https://onepiece.fun/2018/08/04/UIWebView加载本地html及js文件/</id>
     <published>2018-08-04T11:34:24.000Z</published>
     <updated>2018-08-04T15:02:08.619Z</updated>
     <content type="html"><![CDATA[<h1 id="u4E3B_u8981_u662F_u52A0_u8F7DJs_u65F6_u76F8_u5BF9_u8DEF_u5F84_u95EE_u9898"><a href="#u4E3B_u8981_u662F_u52A0_u8F7DJs_u65F6_u76F8_u5BF9_u8DEF_u5F84_u95EE_u9898" class="headerlink" title="主要是加载Js时相对路径问题"></a>主要是加载Js时相对路径问题</h1><p><code>右击项目XCode中项目文件夹Add file</code></p>
@@ -58,14 +58,14 @@
     <![CDATA[<h1 id="u4E3B_u8981_u662F_u52A0_u8F7DJs_u65F6_u76F8_u5BF9_u8DEF_u5F84_u95EE_u9898"><a href="#u4E3B_u8981_u662F_u52A0_u8F7DJs_u65F6_u76F8_u5B]]>
     </summary>
     
-      <category term="UIWebView,Js" scheme="https://onepiece.com/tags/UIWebView-Js/"/>
+      <category term="UIWebView,Js" scheme="https://onepiece.fun/tags/UIWebView-Js/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[iOS9新特性常见关键字]]></title>
-    <link href="https://onepiece.com/2015/11/06/iOS9%E6%96%B0%E7%89%B9%E6%80%A7%E5%B8%B8%E8%A7%81%E5%85%B3%E9%94%AE%E5%AD%97/"/>
-    <id>https://onepiece.com/2015/11/06/iOS9新特性常见关键字/</id>
+    <link href="https://onepiece.fun/2015/11/06/iOS9%E6%96%B0%E7%89%B9%E6%80%A7%E5%B8%B8%E8%A7%81%E5%85%B3%E9%94%AE%E5%AD%97/"/>
+    <id>https://onepiece.fun/2015/11/06/iOS9新特性常见关键字/</id>
     <published>2015-11-06T12:22:53.000Z</published>
     <updated>2016-02-26T03:59:08.000Z</updated>
     <content type="html"><![CDATA[<h1 id="iOS9_u65B0_u7279_u6027_u5E38_u89C1_u5173_u952E_u5B57"><a href="#iOS9_u65B0_u7279_u6027_u5E38_u89C1_u5173_u952E_u5B57" class="headerlink" title="iOS9新特性常见关键字"></a>iOS9新特性常见关键字</h1><ul>
@@ -162,14 +162,14 @@
     <![CDATA[<h1 id="iOS9_u65B0_u7279_u6027_u5E38_u89C1_u5173_u952E_u5B57"><a href="#iOS9_u65B0_u7279_u6027_u5E38_u89C1_u5173_u952E_u5B57" class="headerl]]>
     </summary>
     
-      <category term="iOS9" scheme="https://onepiece.com/tags/iOS9/"/>
+      <category term="iOS9" scheme="https://onepiece.fun/tags/iOS9/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[多线程]]></title>
-    <link href="https://onepiece.com/2015/10/10/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    <id>https://onepiece.com/2015/10/10/多线程/</id>
+    <link href="https://onepiece.fun/2015/10/10/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    <id>https://onepiece.fun/2015/10/10/多线程/</id>
     <published>2015-10-10T12:10:57.000Z</published>
     <updated>2016-02-26T03:55:20.000Z</updated>
     <content type="html"><![CDATA[<h1 id="u591A_u7EBF_u7A0B"><a href="#u591A_u7EBF_u7A0B" class="headerlink" title="多线程"></a>多线程</h1><h1 id="u57FA_u672C_u6982_u5FF5"><a href="#u57FA_u672C_u6982_u5FF5" class="headerlink" title="基本概念"></a>基本概念</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 进程</span><br><span class="line">   进程是指在系统中正在运行的一个应用程序。每个进程之间是独立的，每个进程均运行在其专用且受保护的内存空间内。</span><br><span class="line"><span class="number">2.</span> 线程</span><br><span class="line">   <span class="number">1</span>个进程要想执行任务，必须得有线程（每<span class="number">1</span>个进程至少要有<span class="number">1</span>条线程），线程是进程的基本执行单元，一个进程（程序）的所有任务都在线程中执行。</span><br></pre></td></tr></table></figure>
@@ -284,14 +284,14 @@
     <![CDATA[<h1 id="u591A_u7EBF_u7A0B"><a href="#u591A_u7EBF_u7A0B" class="headerlink" title="多线程"></a>多线程</h1><h1 id="u57FA_u672C_u6982_u5FF5"><a href=]]>
     </summary>
     
-      <category term="多线程" scheme="https://onepiece.com/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+      <category term="多线程" scheme="https://onepiece.fun/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[HTML5]]></title>
-    <link href="https://onepiece.com/2015/09/25/HTML5/"/>
-    <id>https://onepiece.com/2015/09/25/HTML5/</id>
+    <link href="https://onepiece.fun/2015/09/25/HTML5/"/>
+    <id>https://onepiece.fun/2015/09/25/HTML5/</id>
     <published>2015-09-25T11:41:13.000Z</published>
     <updated>2016-02-26T15:40:34.000Z</updated>
     <content type="html"><![CDATA[<h1 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h1><h2 id="HTML5_u524D_u8A00"><a href="#HTML5_u524D_u8A00" class="headerlink" title="HTML5前言"></a>HTML5前言</h2><hr>
@@ -1102,14 +1102,14 @@ font-size: 20px;
     <![CDATA[<h1 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h1><h2 id="HTML5_u524D_u8A00"><a href="#HTML5_u524D_u8A00" class]]>
     </summary>
     
-      <category term="HTML5" scheme="https://onepiece.com/tags/HTML5/"/>
+      <category term="HTML5" scheme="https://onepiece.fun/tags/HTML5/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[GIT的使用]]></title>
-    <link href="https://onepiece.com/2015/02/25/GIT%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>https://onepiece.com/2015/02/25/GIT的使用/</id>
+    <link href="https://onepiece.fun/2015/02/25/GIT%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>https://onepiece.fun/2015/02/25/GIT的使用/</id>
     <published>2015-02-25T11:14:11.000Z</published>
     <updated>2016-02-26T03:56:43.000Z</updated>
     <content type="html"><![CDATA[<h1 id="Git_u7684_u4F7F_u7528"><a href="#Git_u7684_u4F7F_u7528" class="headerlink" title="Git的使用"></a>Git的使用</h1><p>git是一款开源的分布式版本控制工具</p>
@@ -1283,14 +1283,14 @@ font-size: 20px;
 <]]>
     </summary>
     
-      <category term="git" scheme="https://onepiece.com/tags/git/"/>
+      <category term="git" scheme="https://onepiece.fun/tags/git/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Xcode Plugin]]></title>
-    <link href="https://onepiece.com/2014/03/14/Xcode-Plugin/"/>
-    <id>https://onepiece.com/2014/03/14/Xcode-Plugin/</id>
+    <link href="https://onepiece.fun/2014/03/14/Xcode-Plugin/"/>
+    <id>https://onepiece.fun/2014/03/14/Xcode-Plugin/</id>
     <published>2014-03-14T15:27:13.000Z</published>
     <updated>2016-02-26T03:59:22.000Z</updated>
     <content type="html"><![CDATA[<h2 id="FuzzyAutocomplete"><a href="#FuzzyAutocomplete" class="headerlink" title="FuzzyAutocomplete"></a>FuzzyAutocomplete</h2><p>github：<a href="https://github.com/chendo/FuzzyAutocompletePlugin" target="_blank" rel="external">https://github.com/chendo/FuzzyAutocompletePlugin</a><br><img src="https://raw.github.com/chendo/FuzzyAutocompletePlugin/master/demo.gif" alt="FuzzyAutocomplete"></p>
@@ -1305,9 +1305,9 @@ font-size: 20px;
     <![CDATA[<h2 id="FuzzyAutocomplete"><a href="#FuzzyAutocomplete" class="headerlink" title="FuzzyAutocomplete"></a>FuzzyAutocomplete</h2><p>github：<a ]]>
     </summary>
     
-      <category term="xcode" scheme="https://onepiece.com/tags/xcode/"/>
+      <category term="xcode" scheme="https://onepiece.fun/tags/xcode/"/>
     
-      <category term="Xcode" scheme="https://onepiece.com/categories/Xcode/"/>
+      <category term="Xcode" scheme="https://onepiece.fun/categories/Xcode/"/>
     
   </entry>
   
