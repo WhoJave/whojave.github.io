@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://onepiece.fun/"/>
-  <updated>2018-08-05T13:12:06.192Z</updated>
+  <updated>2018-08-07T19:07:39.927Z</updated>
   <id>https://onepiece.fun/</id>
   
   <author>
@@ -13,6 +13,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[ios-class-guard混淆代码基本使用]]></title>
+    <link href="https://onepiece.fun/2018/08/08/ios-class-guard%E6%B7%B7%E6%B7%86%E4%BB%A3%E7%A0%81%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"/>
+    <id>https://onepiece.fun/2018/08/08/ios-class-guard混淆代码基本使用/</id>
+    <published>2018-08-07T19:01:13.000Z</published>
+    <updated>2018-08-07T19:07:39.927Z</updated>
+    <content type="html"><![CDATA[<p><a href="https://github.com/Polidea/ios-class-guard" target="_blank" rel="external">GitHub 点我</a></p>
+<p><a href="https://brew.sh/" target="_blank" rel="external">Homebrew</a></p>
+<p>ios-class-guard是在class-dump的基础进行的混淆处理</p>
+<ul>
+<li><p>安装 (将安装在/usr/local/bin目录下，安装后可以在Terminal使用<code>which ios-class-guard 命令查看</code>)</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install ios-class-guard</span><br></pre></td></tr></table></figure>
+<p>或安装bleeding edge version(测试版)：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install --HEAD ios-class-guard</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用</p>
+<p>1.下载 <code>obfuscate_project</code> 到项目根目录</p>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o obfuscate_project <span class="symbol">https:</span>/<span class="regexp">/raw.githubusercontent.com/</span><span class="constant">Polidea</span>/ios-<span class="class"><span class="keyword">class</span>-<span class="title">guard</span>/<span class="title">master</span>/<span class="title">contrib</span>/<span class="title">obfuscate_project</span> &amp;&amp; <span class="title">chmod</span> +<span class="title">x</span> <span class="title">obfuscate_project</span></span></span><br></pre></td></tr></table></figure>
+<p>2.使用终端或其他文本编辑工具打开<code>obfusacate_project</code> 修改PROJECT，SCHEME，CONFIGURATION，SDK等</p>
+<p><img src="https://ws1.sinaimg.cn/large/8840fde1gy1fu1cepd6p4j20kc05wmxr.jpg" alt=""></p>
+<p>3.按照<code>MyProject-Prefix.pch</code> 格式创建PCH文件（iOS-Class-Guard会自动查找改pch文件并引入后续生成的symbols.h）</p>
+<ul>
+<li><p>步骤</p>
+<p>1.XCode  <code>File -&gt; New -&gt; File -&gt; iOS -&gt; Other -&gt; PCH File</code>  </p>
+<p>2.在target的Build Setting 中设置 <code>Prefix Header</code> 路径 并设置 <code>Precomplie Prefix Header</code> 为 <code>YES</code> </p>
+<p><img src="https://ws1.sinaimg.cn/large/8840fde1ly1fu1dwzmgs1j20t804q3zc.jpg" alt=""></p>
+</li>
+</ul>
+<p>4.终端执行<code>bash obfuscate_project</code> (注意：如果在git环境下先commit一次代码，因为执行此命令会放弃本地所有更改，如果不在git下直接<a href="http://zipzapmac.com/go2shell" target="_blank" rel="external">Go2Shell</a>到终端生产Git环境</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"init"</span></span></span><br></pre></td></tr></table></figure>
+<p>执行<code>bash obfuscate_project</code> 若成功则为在路径下生成 <code>symbols.h</code> 与 <code>symbols.json</code> 若失败则编译项目，查看报错的地方，在<code>obfuscate_project</code> 中添加忽略项 eg: CLASS_GUARD_OPTS= “-i width” 表示不混淆width 修改完后记得commit <code>obfuscate_project</code> 文件</p>
+<p><img src="https://ws1.sinaimg.cn/large/8840fde1gy1fu1etd72vcj218g0ivwom.jpg" alt=""></p>
+</li>
+</ul>
+<p>  验证：</p>
+<p>  编译成功后，Product下出现xx.app,在Finder中显示包内容，将可执行文件拷贝到某路径下，在目录创建一个文件夹存放头文件</p>
+<p>  <code>class-dump -H 可执行文件名 -o 输入目录</code> </p>
+<p>  砸出的头文件不规则乱码这种表示混淆成功</p>
+<p>  <img src="https://ws1.sinaimg.cn/large/8840fde1gy1fu1egtsgphj20bw072aav.jpg" alt=""></p>
+<p>  本文是ios-class-guard的基本使用，后续将进一步剖析，敬请期待!</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="https://github.com/Polidea/ios-class-guard" target="_blank" rel="external">GitHub 点我</a></p>
+<p><a href="https://brew.sh/" targe]]>
+    </summary>
+    
+      <category term="iOS代码混淆,ios-class-guard" scheme="https://onepiece.fun/tags/iOS%E4%BB%A3%E7%A0%81%E6%B7%B7%E6%B7%86-ios-class-guard/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[AppleId转美区(无需信用卡)]]></title>

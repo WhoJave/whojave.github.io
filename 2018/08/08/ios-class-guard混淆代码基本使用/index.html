@@ -37,7 +37,7 @@
 
 
 
-  <meta name="keywords" content="xcode," />
+  <meta name="keywords" content="iOS代码混淆,ios-class-guard," />
 
 
 
@@ -48,25 +48,41 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="FuzzyAutocompletegithub：https://github.com/chendo/FuzzyAutocompletePlugin
-一个支持模糊匹配的代码提示优化插件，支持了xcode5.1注意：使用的时候有个输入字母字数小于3就输入不了的bug。效率必备。
-KSImageNamedgithub: https://github.com/ksuther/KSImageNamed-Xc">
+<meta name="description" content="GitHub 点我
+Homebrew
+ios-class-guard是在class-dump的基础进行的混淆处理
+
+安装 (将安装在/usr/local/bin目录下，安装后可以在Terminal使用which ios-class-guard 命令查看)
+1brew install ios-class-guard
+或安装bleeding edge version(测试版)：
+1brew insta">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Xcode Plugin">
-<meta property="og:url" content="https://onepiece.fun/2014/03/14/Xcode-Plugin/index.html">
+<meta property="og:title" content="ios-class-guard混淆代码基本使用">
+<meta property="og:url" content="https://onepiece.fun/2018/08/08/ios-class-guard混淆代码基本使用/index.html">
 <meta property="og:site_name" content="OnePiece's Blog">
-<meta property="og:description" content="FuzzyAutocompletegithub：https://github.com/chendo/FuzzyAutocompletePlugin
-一个支持模糊匹配的代码提示优化插件，支持了xcode5.1注意：使用的时候有个输入字母字数小于3就输入不了的bug。效率必备。
-KSImageNamedgithub: https://github.com/ksuther/KSImageNamed-Xc">
-<meta property="og:image" content="https://raw.github.com/chendo/FuzzyAutocompletePlugin/master/demo.gif">
-<meta property="og:image" content="https://raw.github.com/ksuther/KSImageNamed-Xcode/master/screenshot.gif">
-<meta property="og:image" content="https://github.com/holtwick/HOStringSense-for-Xcode/raw/master/StringDemoAnimation.gif">
-<meta property="og:updated_time" content="2016-02-26T03:59:22.000Z">
+<meta property="og:description" content="GitHub 点我
+Homebrew
+ios-class-guard是在class-dump的基础进行的混淆处理
+
+安装 (将安装在/usr/local/bin目录下，安装后可以在Terminal使用which ios-class-guard 命令查看)
+1brew install ios-class-guard
+或安装bleeding edge version(测试版)：
+1brew insta">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/8840fde1gy1fu1cepd6p4j20kc05wmxr.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/8840fde1ly1fu1dwzmgs1j20t804q3zc.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/8840fde1gy1fu1etd72vcj218g0ivwom.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/8840fde1gy1fu1egtsgphj20bw072aav.jpg">
+<meta property="og:updated_time" content="2018-08-07T19:07:39.927Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xcode Plugin">
-<meta name="twitter:description" content="FuzzyAutocompletegithub：https://github.com/chendo/FuzzyAutocompletePlugin
-一个支持模糊匹配的代码提示优化插件，支持了xcode5.1注意：使用的时候有个输入字母字数小于3就输入不了的bug。效率必备。
-KSImageNamedgithub: https://github.com/ksuther/KSImageNamed-Xc">
+<meta name="twitter:title" content="ios-class-guard混淆代码基本使用">
+<meta name="twitter:description" content="GitHub 点我
+Homebrew
+ios-class-guard是在class-dump的基础进行的混淆处理
+
+安装 (将安装在/usr/local/bin目录下，安装后可以在Terminal使用which ios-class-guard 命令查看)
+1brew install ios-class-guard
+或安装bleeding edge version(测试版)：
+1brew insta">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -78,7 +94,7 @@ KSImageNamedgithub: https://github.com/ksuther/KSImageNamed-Xc">
 
 
 
-  <title> Xcode Plugin | OnePiece's Blog </title>
+  <title> ios-class-guard混淆代码基本使用 | OnePiece's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -244,7 +260,7 @@ KSImageNamedgithub: https://github.com/ksuther/KSImageNamed-Xc">
             
             
               
-                Xcode Plugin
+                ios-class-guard混淆代码基本使用
               
             
           </h1>
@@ -253,34 +269,19 @@ KSImageNamedgithub: https://github.com/ksuther/KSImageNamed-Xc">
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2014-03-14T23:27:13+08:00" content="2014-03-14">
-              2014-03-14
+            <time itemprop="dateCreated" datetime="2018-08-08T03:01:13+08:00" content="2018-08-08">
+              2018-08-08
             </time>
           </span>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Xcode/" itemprop="url" rel="index">
-                    <span itemprop="name">Xcode</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
           
 
           
             
               <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2014/03/14/Xcode-Plugin/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014/03/14/Xcode-Plugin/" itemprop="commentsCount"></span>
+              <a href="/2018/08/08/ios-class-guard混淆代码基本使用/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/08/08/ios-class-guard混淆代码基本使用/" itemprop="commentsCount"></span>
               </a>
             </span>
             
@@ -299,13 +300,40 @@ KSImageNamedgithub: https://github.com/ksuther/KSImageNamed-Xc">
       
 
       
-        <span itemprop="articleBody"><h2 id="FuzzyAutocomplete"><a href="#FuzzyAutocomplete" class="headerlink" title="FuzzyAutocomplete"></a>FuzzyAutocomplete</h2><p>github：<a href="https://github.com/chendo/FuzzyAutocompletePlugin" target="_blank" rel="external">https://github.com/chendo/FuzzyAutocompletePlugin</a><br><img src="https://raw.github.com/chendo/FuzzyAutocompletePlugin/master/demo.gif" alt="FuzzyAutocomplete"></p>
-<p>一个支持<strong>模糊匹配</strong>的代码提示优化插件，支持了xcode5.1<br>注意：使用的时候有个输入字母字数小于3就输入不了的bug。<br>效率必备。</p>
-<h2 id="KSImageNamed"><a href="#KSImageNamed" class="headerlink" title="KSImageNamed"></a>KSImageNamed</h2><p>github: <a href="https://github.com/ksuther/KSImageNamed-Xcode" target="_blank" rel="external">https://github.com/ksuther/KSImageNamed-Xcode</a><br><img src="https://raw.github.com/ksuther/KSImageNamed-Xcode/master/screenshot.gif" alt="KSImageNamed"><br>输入<code>imageNamed:</code>之后快速预览选择图片<br>注意：项目中图片文件数量很多的时候，安装这个插件导致xcode运行明显缓慢，不知道现在版本是否已经修改了这个bug<br>手写UI的尤其适用，我等sb党用的少点。</p>
-<h2 id="HOStringSense"><a href="#HOStringSense" class="headerlink" title="HOStringSense"></a>HOStringSense</h2><p>github: <a href="https://github.com/holtwick/HOStringSense-for-Xcode" target="_blank" rel="external">https://github.com/holtwick/HOStringSense-for-Xcode</a><br><img src="https://github.com/holtwick/HOStringSense-for-Xcode/raw/master/StringDemoAnimation.gif" alt="HOStringSense"><br>帮助快速输入字符串，尤其是长段复杂的字符串。</p>
-<blockquote>
-<p>to be continue…</p>
-</blockquote>
+        <span itemprop="articleBody"><p><a href="https://github.com/Polidea/ios-class-guard" target="_blank" rel="external">GitHub 点我</a></p>
+<p><a href="https://brew.sh/" target="_blank" rel="external">Homebrew</a></p>
+<p>ios-class-guard是在class-dump的基础进行的混淆处理</p>
+<ul>
+<li><p>安装 (将安装在/usr/local/bin目录下，安装后可以在Terminal使用<code>which ios-class-guard 命令查看</code>)</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install ios-class-guard</span><br></pre></td></tr></table></figure>
+<p>或安装bleeding edge version(测试版)：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install --HEAD ios-class-guard</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用</p>
+<p>1.下载 <code>obfuscate_project</code> 到项目根目录</p>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o obfuscate_project <span class="symbol">https:</span>/<span class="regexp">/raw.githubusercontent.com/</span><span class="constant">Polidea</span>/ios-<span class="class"><span class="keyword">class</span>-<span class="title">guard</span>/<span class="title">master</span>/<span class="title">contrib</span>/<span class="title">obfuscate_project</span> &amp;&amp; <span class="title">chmod</span> +<span class="title">x</span> <span class="title">obfuscate_project</span></span></span><br></pre></td></tr></table></figure>
+<p>2.使用终端或其他文本编辑工具打开<code>obfusacate_project</code> 修改PROJECT，SCHEME，CONFIGURATION，SDK等</p>
+<p><img src="https://ws1.sinaimg.cn/large/8840fde1gy1fu1cepd6p4j20kc05wmxr.jpg" alt=""></p>
+<p>3.按照<code>MyProject-Prefix.pch</code> 格式创建PCH文件（iOS-Class-Guard会自动查找改pch文件并引入后续生成的symbols.h）</p>
+<ul>
+<li><p>步骤</p>
+<p>1.XCode  <code>File -&gt; New -&gt; File -&gt; iOS -&gt; Other -&gt; PCH File</code>  </p>
+<p>2.在target的Build Setting 中设置 <code>Prefix Header</code> 路径 并设置 <code>Precomplie Prefix Header</code> 为 <code>YES</code> </p>
+<p><img src="https://ws1.sinaimg.cn/large/8840fde1ly1fu1dwzmgs1j20t804q3zc.jpg" alt=""></p>
+</li>
+</ul>
+<p>4.终端执行<code>bash obfuscate_project</code> (注意：如果在git环境下先commit一次代码，因为执行此命令会放弃本地所有更改，如果不在git下直接<a href="http://zipzapmac.com/go2shell" target="_blank" rel="external">Go2Shell</a>到终端生产Git环境</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"init"</span></span></span><br></pre></td></tr></table></figure>
+<p>执行<code>bash obfuscate_project</code> 若成功则为在路径下生成 <code>symbols.h</code> 与 <code>symbols.json</code> 若失败则编译项目，查看报错的地方，在<code>obfuscate_project</code> 中添加忽略项 eg: CLASS_GUARD_OPTS= “-i width” 表示不混淆width 修改完后记得commit <code>obfuscate_project</code> 文件</p>
+<p><img src="https://ws1.sinaimg.cn/large/8840fde1gy1fu1etd72vcj218g0ivwom.jpg" alt=""></p>
+</li>
+</ul>
+<p>  验证：</p>
+<p>  编译成功后，Product下出现xx.app,在Finder中显示包内容，将可执行文件拷贝到某路径下，在目录创建一个文件夹存放头文件</p>
+<p>  <code>class-dump -H 可执行文件名 -o 输入目录</code> </p>
+<p>  砸出的头文件不规则乱码这种表示混淆成功</p>
+<p>  <img src="https://ws1.sinaimg.cn/large/8840fde1gy1fu1egtsgphj20bw072aav.jpg" alt=""></p>
+<p>  本文是ios-class-guard的基本使用，后续将进一步剖析，敬请期待!</p>
 </span>
       
     </div>
@@ -314,7 +342,7 @@ KSImageNamedgithub: https://github.com/ksuther/KSImageNamed-Xc">
       
         <div class="post-tags">
           
-            <a href="/tags/xcode/" rel="tag">#xcode</a>
+            <a href="/tags/iOS代码混淆-ios-class-guard/" rel="tag">#iOS代码混淆,ios-class-guard</a>
           
         </div>
       
@@ -323,13 +351,13 @@ KSImageNamedgithub: https://github.com/ksuther/KSImageNamed-Xc">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/08/04/AppleId转美区-无需信用卡/" rel="next" title="AppleId转美区(无需信用卡)">
+                <i class="fa fa-chevron-left"></i> AppleId转美区(无需信用卡)
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/02/25/GIT的使用/" rel="prev" title="GIT的使用">
-                GIT的使用 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -507,7 +535,7 @@ KSImageNamedgithub: https://github.com/ksuther/KSImageNamed-Xc">
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#FuzzyAutocomplete"><span class="nav-number">1.</span> <span class="nav-text">FuzzyAutocomplete</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#KSImageNamed"><span class="nav-number">2.</span> <span class="nav-text">KSImageNamed</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HOStringSense"><span class="nav-number">3.</span> <span class="nav-text">HOStringSense</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
@@ -562,9 +590,9 @@ KSImageNamedgithub: https://github.com/ksuther/KSImageNamed-Xc">
 
     <script type="text/javascript">
       var disqus_shortname = 'onepiecefun';
-      var disqus_identifier = '2014/03/14/Xcode-Plugin/';
-      var disqus_title = 'Xcode Plugin';
-      var disqus_url = 'https://onepiece.fun/2014/03/14/Xcode-Plugin/';
+      var disqus_identifier = '2018/08/08/ios-class-guard混淆代码基本使用/';
+      var disqus_title = 'ios-class-guard混淆代码基本使用';
+      var disqus_url = 'https://onepiece.fun/2018/08/08/ios-class-guard混淆代码基本使用/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
