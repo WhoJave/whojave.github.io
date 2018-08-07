@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://onepiece.fun/"/>
-  <updated>2018-08-07T19:07:39.927Z</updated>
+  <updated>2018-08-07T19:09:22.934Z</updated>
   <id>https://onepiece.fun/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="https://onepiece.fun/2018/08/08/ios-class-guard%E6%B7%B7%E6%B7%86%E4%BB%A3%E7%A0%81%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"/>
     <id>https://onepiece.fun/2018/08/08/ios-class-guard混淆代码基本使用/</id>
     <published>2018-08-07T19:01:13.000Z</published>
-    <updated>2018-08-07T19:07:39.927Z</updated>
+    <updated>2018-08-07T19:09:22.934Z</updated>
     <content type="html"><![CDATA[<p><a href="https://github.com/Polidea/ios-class-guard" target="_blank" rel="external">GitHub 点我</a></p>
 <p><a href="https://brew.sh/" target="_blank" rel="external">Homebrew</a></p>
 <p>ios-class-guard是在class-dump的基础进行的混淆处理</p>
@@ -60,7 +60,7 @@
 <p><a href="https://brew.sh/" targe]]>
     </summary>
     
-      <category term="iOS代码混淆,ios-class-guard" scheme="https://onepiece.fun/tags/iOS%E4%BB%A3%E7%A0%81%E6%B7%B7%E6%B7%86-ios-class-guard/"/>
+      <category term="iOS代码混淆;ios-class-guard" scheme="https://onepiece.fun/tags/iOS%E4%BB%A3%E7%A0%81%E6%B7%B7%E6%B7%86-ios-class-guard/"/>
     
   </entry>
   
