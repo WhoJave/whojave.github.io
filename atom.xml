@@ -39,11 +39,11 @@
   </entry>
   
   <entry>
-    <title><![CDATA[UIWebView加载本地html及js文件]]></title>
+    <title><![CDATA[UIWebView加载本地html5游戏]]></title>
     <link href="https://onepiece.fun/2018/08/04/UIWebView%E5%8A%A0%E8%BD%BD%E6%9C%AC%E5%9C%B0html%E5%8F%8Ajs%E6%96%87%E4%BB%B6/"/>
     <id>https://onepiece.fun/2018/08/04/UIWebView加载本地html及js文件/</id>
     <published>2018-08-04T11:34:24.000Z</published>
-    <updated>2018-08-04T15:02:08.619Z</updated>
+    <updated>2018-08-07T18:46:39.225Z</updated>
     <content type="html"><![CDATA[<h1 id="u4E3B_u8981_u662F_u52A0_u8F7DJs_u65F6_u76F8_u5BF9_u8DEF_u5F84_u95EE_u9898"><a href="#u4E3B_u8981_u662F_u52A0_u8F7DJs_u65F6_u76F8_u5BF9_u8DEF_u5F84_u95EE_u9898" class="headerlink" title="主要是加载Js时相对路径问题"></a>主要是加载Js时相对路径问题</h1><p><code>右击项目XCode中项目文件夹Add file</code></p>
 <p><strong>注意</strong>: 项目中所有的相对路径都需要修改 eg：/images/fish.png修改为fish.png即可</p>
 <ul>
