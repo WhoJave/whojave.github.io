@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://onepiece.fun/"/>
-  <updated>2018-08-07T19:09:22.934Z</updated>
+  <updated>2018-09-18T15:50:34.459Z</updated>
   <id>https://onepiece.fun/</id>
   
   <author>
@@ -13,6 +13,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Ubuntu中vi命令的使用]]></title>
+    <link href="https://onepiece.fun/2018/09/18/Ubuntu%E4%B8%ADvi%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>https://onepiece.fun/2018/09/18/Ubuntu中vi命令的使用/</id>
+    <published>2018-09-18T15:45:07.000Z</published>
+    <updated>2018-09-18T15:50:34.459Z</updated>
+    <content type="html"><![CDATA[<h3 id="u5728Ubuntu_u7CFB_u7EDF_u4E2D_2C_u8FDB_u5165vi_u547D_u4EE4_u7F16_u8F91_u6A21_u5F0F_u65E0_u6CD5_u4F7F_u7528_u65B9_u5411_u952E_u79FB_u52A8_u5149_u6807_u4EE5_u53CAMac_u952E_u76D8_u4E2DDelete_u65E0_u6CD5_u6B63_u5E38_u5220_u9664_u5B57_u7B26"><a href="#u5728Ubuntu_u7CFB_u7EDF_u4E2D_2C_u8FDB_u5165vi_u547D_u4EE4_u7F16_u8F91_u6A21_u5F0F_u65E0_u6CD5_u4F7F_u7528_u65B9_u5411_u952E_u79FB_u52A8_u5149_u6807_u4EE5_u53CAMac_u952E_u76D8_u4E2DDelete_u65E0_u6CD5_u6B63_u5E38_u5220_u9664_u5B57_u7B26" class="headerlink" title="在Ubuntu系统中,进入vi命令编辑模式无法使用方向键移动光标以及Mac键盘中Delete无法正常删除字符."></a>在Ubuntu系统中,进入vi命令编辑模式无法使用方向键移动光标以及Mac键盘中Delete无法正常删除字符.</h3><p>这是由于Ubuntu系统中的vi是vim-tiny版本,使用方法可以在终端输入<code>man vi</code> 然后按下<code>h</code> 即可.(参看下图或跳过看安装vim步骤)</p>
+<p><img src="https://ws1.sinaimg.cn/large/9087010dgy1fvdwfm1f5wj21380myqdd.jpg" alt=""></p>
+<p><img src="https://ws1.sinaimg.cn/large/9087010dgy1fvdwci4g0dj213a0lsn7w.jpg" alt=""></p>
+<p>移除vim.tiny</p>
+<p><code>sudo apt-get remove vim-common</code></p>
+<p>安装vim.full版本</p>
+<p><code>sudo apt-get install vim</code></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="u5728Ubuntu_u7CFB_u7EDF_u4E2D_2C_u8FDB_u5165vi_u547D_u4EE4_u7F16_u8F91_u6A21_u5F0F_u65E0_u6CD5_u4F7F_u7528_u65B9_u5411_u952E_u79FB_u]]>
+    </summary>
+    
+      <category term="Ubuntu,vi" scheme="https://onepiece.fun/tags/Ubuntu-vi/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[ios-class-guard混淆代码基本使用]]></title>
