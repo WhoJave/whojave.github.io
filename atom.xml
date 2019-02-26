@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://onepiece.fun/"/>
-  <updated>2018-09-18T15:50:34.459Z</updated>
+  <updated>2019-02-26T13:05:20.357Z</updated>
   <id>https://onepiece.fun/</id>
   
   <author>
@@ -13,6 +13,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[如何更新Mac Bash]]></title>
+    <link href="https://onepiece.fun/2019/02/26/%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0Mac-Bash/"/>
+    <id>https://onepiece.fun/2019/02/26/如何更新Mac-Bash/</id>
+    <published>2019-02-26T13:03:43.000Z</published>
+    <updated>2019-02-26T13:05:20.357Z</updated>
+    <content type="html"><![CDATA[<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#&#26597;&#30475;bash &#29256;&#26412;&#10;bash -version</span><br></pre></td></tr></table></figure>
+<p>版本升级：</p>
+<p>方式1：brew安装 直接升级到最新版bash</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install bash</span><br></pre></td></tr></table></figure>
+<p>方式2：升级到指定版本 </p>
+<p>Bash 下载地址: <a href="http://ftp.gnu.org/gnu/bash/" target="_blank" rel="external">http://ftp.gnu.org/gnu/bash/</a></p>
+<p>选择要安装的版本，复制下载链接</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://ftp.gnu.org/gnu/bash/bash-4.4.tar.gz&#10;tar zxvf bash-4.4.tar.gz&#10;cd bash-4.4&#10;./configure&#10;make&#10;make install&#10;#&#29256;&#26412;&#26367;&#25442;&#10;sudo mv /bin/bash /bin/bash.origin&#10;sudo ln -s /usr/local/opt/bash/bin/bash /bin/bash\n&#10;#&#30001;&#20110;&#26412;mac&#29256;&#26412;&#19979;&#30340;sh&#24182;&#19981;&#26159;&#30452;&#25509;&#38142;&#25509;bash&#65292;&#32780;&#26159;bash&#30340;&#19968;&#20010;&#25991;&#20214;&#25335;&#36125;&#12290;&#22240;&#27492;&#65292;&#36824;&#35201;&#26367;&#25442;&#40664;&#35748;&#30340;sh&#25351;&#21521;&#30340;&#21629;&#20196;&#20026;bash&#65292;&#22914;&#19979;&#65306;&#10;sudo mv /bin/sh /bin/sh.origin&#10;sudo ln -s /usr/local/opt/bash/bin/bash /bin/sh\n&#10;bash -version</span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="li]]>
+    </summary>
+    
+      <category term="Mac,Bash" scheme="https://onepiece.fun/tags/Mac-Bash/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Ubuntu中vi命令的使用]]></title>
@@ -115,7 +138,7 @@
     <link href="https://onepiece.fun/2018/08/04/UIWebView%E5%8A%A0%E8%BD%BD%E6%9C%AC%E5%9C%B0html%E5%8F%8Ajs%E6%96%87%E4%BB%B6/"/>
     <id>https://onepiece.fun/2018/08/04/UIWebView加载本地html及js文件/</id>
     <published>2018-08-04T11:34:24.000Z</published>
-    <updated>2018-08-07T18:46:39.225Z</updated>
+    <updated>2018-09-18T15:49:59.679Z</updated>
     <content type="html"><![CDATA[<h1 id="u4E3B_u8981_u662F_u52A0_u8F7DJs_u65F6_u76F8_u5BF9_u8DEF_u5F84_u95EE_u9898"><a href="#u4E3B_u8981_u662F_u52A0_u8F7DJs_u65F6_u76F8_u5BF9_u8DEF_u5F84_u95EE_u9898" class="headerlink" title="主要是加载Js时相对路径问题"></a>主要是加载Js时相对路径问题</h1><p><code>右击项目XCode中项目文件夹Add file</code></p>
 <p><strong>注意</strong>: 项目中所有的相对路径都需要修改 eg：/images/fish.png修改为fish.png即可</p>
 <ul>
