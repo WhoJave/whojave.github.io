@@ -466,17 +466,22 @@
       
         
           
-            <p>iTunes 12.6 带有 App Store 功能，可以下载和管理 App 的 ipa 安装包。</p>
-<ol>
-<li>下载这个文件，双击打开文件，或者使用“脚本编辑器”打开这个文件 (文件下载地址：<a href="http://t.cn/E4tLunQ" target="_blank" rel="noopener">http://t.cn/E4tLunQ</a> )</li>
-<li>脚本编辑器，点击“运行”按钮(或按快捷键 Command+R)，根据提示操作就行了</li>
-<li>大致过程：先删除本机 iTunes，选择 iTunes 12.6 文件，修改文件后再安装 iTunes 12.6 </li>
-<li>方法来源：<a href="http://t.cn/E4txIvq" target="_blank" rel="noopener">http://t.cn/E4txIvq</a></li>
-<li>如果打开 iTunes 12.6 提示无法读取文件“iTunes Library.itl”，因为它是由更高版本的 iTunes 所创建。，点击“退出”按钮，打开文件夹 /用户/cc/音乐/iTunes(cc是用户名)，删除 “iTunes Library.itl” 文件，再 iTunes 12.6 就 OK 了</li>
-</ol>
-<p>iTunes 下载地址：<a href="http://t.cn/E4tAFuY" target="_blank" rel="noopener">http://t.cn/E4tAFuY</a></p>
+            <p>
+              iTunes 12.6 带有 App Store 功能，可以下载和管理 App 的 ipa 安装包。
 
+下载这个文件，双击打开文件，或者使用“脚本编辑器”打开这个文件 (文件下载地址：http://t.cn/E4tLunQ )
+脚本编辑器，点击“运行”按钮(或按快捷键 Command+R)，根据提示
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/02/26/MoJave安装iTunes12-6下载ipa/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -617,19 +622,28 @@
       
         
           
-            <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">查看bash 版本</span></span><br><span class="line">bash -version</span><br></pre></td></tr></table></figure>
+            <p>
+              #查看bash 版本bash -version
 
-<p>版本升级：</p>
-<p>方式1：brew安装 直接升级到最新版bash</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install bash</span><br></pre></td></tr></table></figure>
+版本升级：
+方式1：brew安装 直接升级到最新版bash
+brew install bash
 
-<p>方式2：升级到指定版本 </p>
-<p>Bash 下载地址: <a href="http://ftp.gnu.org/gnu/bash/" target="_blank" rel="noopener">http://ftp.gnu.org/gnu/bash/</a></p>
-<p>选择要安装的版本，复制下载链接</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">wget http://ftp.gnu.org/gnu/bash/bash-4.4.tar.gz</span><br><span class="line">tar zxvf bash-4.4.tar.gz</span><br><span class="line">cd bash-4.4</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br><span class="line"><span class="meta">#</span><span class="bash">版本替换</span></span><br><span class="line">sudo mv /bin/bash /bin/bash.origin</span><br><span class="line">sudo ln -s /usr/local/opt/bash/bin/bash /bin/bash\n</span><br><span class="line"><span class="meta">#</span><span class="bash">由于本mac版本下的sh并不是直接链接bash，而是bash的一个文件拷贝。因此，还要替换默认的sh指向的命令为bash，如下：</span></span><br><span class="line">sudo mv /bin/sh /bin/sh.origin</span><br><span class="line">sudo ln -s /usr/local/opt/bash/bin/bash /bin/sh\n</span><br><span class="line">bash -version</span><br></pre></td></tr></table></figure>
-
-
+方式2：升级到指定版本 
+Bash 下载地址: http://ftp.gnu.org/gnu/bash/
+选择要安装的版本，复制下载链接
+wget ht
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/02/26/如何更新Mac-Bash/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -770,15 +784,23 @@
       
         
           
-            <h3 id="在Ubuntu系统中-进入vi命令编辑模式无法使用方向键移动光标以及Mac键盘中Delete无法正常删除字符"><a href="#在Ubuntu系统中-进入vi命令编辑模式无法使用方向键移动光标以及Mac键盘中Delete无法正常删除字符" class="headerlink" title="在Ubuntu系统中,进入vi命令编辑模式无法使用方向键移动光标以及Mac键盘中Delete无法正常删除字符."></a>在Ubuntu系统中,进入vi命令编辑模式无法使用方向键移动光标以及Mac键盘中Delete无法正常删除字符.</h3><p>这是由于Ubuntu系统中的vi是vim-tiny版本,使用方法可以在终端输入<code>man vi</code> 然后按下<code>h</code> 即可.(参看下图或跳过看安装vim步骤)</p>
-<p><img src="https://ws1.sinaimg.cn/large/9087010dgy1fvdwfm1f5wj21380myqdd.jpg" alt></p>
-<p><img src="https://ws1.sinaimg.cn/large/9087010dgy1fvdwci4g0dj213a0lsn7w.jpg" alt></p>
-<p>移除vim.tiny</p>
-<p><code>sudo apt-get remove vim-common</code></p>
-<p>安装vim.full版本</p>
-<p><code>sudo apt-get install vim</code></p>
+            <p>
+              在Ubuntu系统中,进入vi命令编辑模式无法使用方向键移动光标以及Mac键盘中Delete无法正常删除字符.这是由于Ubuntu系统中的vi是vim-tiny版本,使用方法可以在终端输入man vi 然后按下h 即可.(参看下图或跳过看安装vim步骤)
 
+
+移除vim.tiny
+sudo apt-
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/09/18/Ubuntu中vi命令的使用/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -919,45 +941,24 @@
       
         
           
-            <p><a href="https://github.com/Polidea/ios-class-guard" target="_blank" rel="noopener">GitHub 点我</a></p>
-<p><a href="https://brew.sh/" target="_blank" rel="noopener">Homebrew</a></p>
-<p>ios-class-guard是在class-dump的基础进行的混淆处理</p>
-<ul>
-<li><p>安装 (将安装在/usr/local/bin目录下，安装后可以在Terminal使用<code>which ios-class-guard 命令查看</code>)</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install ios-class-guard</span><br></pre></td></tr></table></figure>
+            <p>
+              GitHub 点我
+Homebrew
+ios-class-guard是在class-dump的基础进行的混淆处理
 
-<p>或安装bleeding edge version(测试版)：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install --HEAD ios-class-guard</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使用</p>
-<p>1.下载 <code>obfuscate_project</code> 到项目根目录</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o obfuscate_project https:<span class="regexp">//</span>raw.githubusercontent.com<span class="regexp">/Polidea/i</span>os-class-guard<span class="regexp">/master/</span>contrib<span class="regexp">/obfuscate_project &amp;&amp; chmod +x obfuscate_project</span></span><br></pre></td></tr></table></figure>
-
-<p>2.使用终端或其他文本编辑工具打开<code>obfusacate_project</code> 修改PROJECT，SCHEME，CONFIGURATION，SDK等</p>
-<p><img src="https://ws1.sinaimg.cn/large/8840fde1gy1fu1cepd6p4j20kc05wmxr.jpg" alt></p>
-<p>3.按照<code>MyProject-Prefix.pch</code> 格式创建PCH文件（iOS-Class-Guard会自动查找改pch文件并引入后续生成的symbols.h）</p>
-<ul>
-<li><p>步骤</p>
-<p>1.XCode  <code>File -&gt; New -&gt; File -&gt; iOS -&gt; Other -&gt; PCH File</code>  </p>
-<p>2.在target的Build Setting 中设置 <code>Prefix Header</code> 路径 并设置 <code>Precomplie Prefix Header</code> 为 <code>YES</code> </p>
-<p><img src="https://ws1.sinaimg.cn/large/8840fde1ly1fu1dwzmgs1j20t804q3zc.jpg" alt></p>
-</li>
-</ul>
-<p>4.终端执行<code>bash obfuscate_project</code> (注意：如果在git环境下先commit一次代码，因为执行此命令会放弃本地所有更改，如果不在git下直接<a href="http://zipzapmac.com/go2shell" target="_blank" rel="noopener">Go2Shell</a>到终端生产Git环境</p>
-<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git <span class="keyword">add</span><span class="bash"> .</span></span><br><span class="line">git commit -m <span class="string">"init"</span></span><br></pre></td></tr></table></figure>
-
-<p>执行<code>bash obfuscate_project</code> 若成功则为在路径下生成 <code>symbols.h</code> 与 <code>symbols.json</code> 若失败则编译项目，查看报错的地方，在<code>obfuscate_project</code> 中添加忽略项 eg: CLASS_GUARD_OPTS= “-i width” 表示不混淆width 修改完后记得commit <code>obfuscate_project</code> 文件</p>
-<p><img src="https://ws1.sinaimg.cn/large/8840fde1gy1fu1etd72vcj218g0ivwom.jpg" alt></p>
-</li>
-</ul>
-<p>  验证：</p>
-<p>  编译成功后，Product下出现xx.app,在Finder中显示包内容，将可执行文件拷贝到某路径下，在目录创建一个文件夹存放头文件</p>
-<p>  <code>class-dump -H 可执行文件名 -o 输入目录</code> </p>
-<p>  砸出的头文件不规则乱码这种表示混淆成功</p>
-<p>  <img src="https://ws1.sinaimg.cn/large/8840fde1gy1fu1egtsgphj20bw072aav.jpg" alt></p>
-<p>  本文是ios-class-guard的基本使用，后续将进一步剖析，敬请期待!</p>
-
+安装 (将安装在/usr/local/bin目录下，安装后可以在Terminal使用which ios-class-guard 命令查看)
+brew install ios-class
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/08/08/ios-class-guard混淆代码基本使用/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1110,16 +1111,22 @@
       
         
           
-            <p>很多小伙伴有下载美区的App的需求，但因AppleId申请麻烦的问题可能就去淘宝买ID了，现在给大家分享一下转区方法</p>
-<p><strong><em>前提</em></strong>：需要美区IP地址，可以使用美区的梯子全局代理即可，可访问<a href="https://ipip.net" target="_blank" rel="noopener">https://ipip.net</a>  查看是否是美区IP，一切就绪后，步骤如下</p>
-<ul>
-<li><p><code>设置</code>–<code>iTunes Store 与 App Store</code> —<code>点击AppleID</code> —在弹窗中点击<code>查看AppleID</code> – 验证帐号后 – 点击<code>国家与地区</code> — 点击<code>选择国家或地区</code> – 选择美国</p>
-<p>信息可按下图填写：</p>
-<p><img src="https://ws1.sinaimg.cn/large/8840fde1gy1ftz4s0bp3tj20ls14qq5f.jpg" alt></p>
-</li>
-</ul>
+            <p>
+              很多小伙伴有下载美区的App的需求，但因AppleId申请麻烦的问题可能就去淘宝买ID了，现在给大家分享一下转区方法
+前提：需要美区IP地址，可以使用美区的梯子全局代理即可，可访问https://ipip.net  查看是否是美区IP，一切就绪后，步骤如下
 
+设置–iTunes Store 与 Ap
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/08/04/AppleId转美区-无需信用卡/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
