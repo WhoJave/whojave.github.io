@@ -98,13 +98,13 @@
 
 
 
-  <meta name="description" content="GitHub 点我 Homebrew ios-class-guard是在class-dump的基础进行的混淆处理  安装 (将安装在/usr/local/bin目录下，安装后可以在Terminal使用which ios-class-guard 命令查看) 1brew install ios-class-guard 或安装bleeding edge version(测试版)： 1brew insta">
+  <meta name="description" content="GitHub 点我 Homebrew ios-class-guard是在class-dump的基础进行的混淆处理  安装 (将安装在/usr/local/bin目录下，安装后可以在Terminal使用which ios-class-guard 命令查看) 1brew install ios-class-guard  或安装bleeding edge version(测试版)： 1brew inst">
 <meta name="keywords" content="iOS代码混淆;ios-class-guard">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ios-class-guard混淆代码基本使用">
 <meta property="og:url" content="https://onepiece.fun/2018/08/08/ios-class-guard混淆代码基本使用/index.html">
 <meta property="og:site_name" content="OnePiece&#39;s Blog">
-<meta property="og:description" content="GitHub 点我 Homebrew ios-class-guard是在class-dump的基础进行的混淆处理  安装 (将安装在/usr/local/bin目录下，安装后可以在Terminal使用which ios-class-guard 命令查看) 1brew install ios-class-guard 或安装bleeding edge version(测试版)： 1brew insta">
+<meta property="og:description" content="GitHub 点我 Homebrew ios-class-guard是在class-dump的基础进行的混淆处理  安装 (将安装在/usr/local/bin目录下，安装后可以在Terminal使用which ios-class-guard 命令查看) 1brew install ios-class-guard  或安装bleeding edge version(测试版)： 1brew inst">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/8840fde1gy1fu1cepd6p4j20kc05wmxr.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/8840fde1ly1fu1dwzmgs1j20t804q3zc.jpg">
@@ -113,7 +113,7 @@
 <meta property="og:updated_time" content="2018-08-07T19:09:22.934Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ios-class-guard混淆代码基本使用">
-<meta name="twitter:description" content="GitHub 点我 Homebrew ios-class-guard是在class-dump的基础进行的混淆处理  安装 (将安装在/usr/local/bin目录下，安装后可以在Terminal使用which ios-class-guard 命令查看) 1brew install ios-class-guard 或安装bleeding edge version(测试版)： 1brew insta">
+<meta name="twitter:description" content="GitHub 点我 Homebrew ios-class-guard是在class-dump的基础进行的混淆处理  安装 (将安装在/usr/local/bin目录下，安装后可以在Terminal使用which ios-class-guard 命令查看) 1brew install ios-class-guard  或安装bleeding edge version(测试版)： 1brew inst">
 <meta name="twitter:image" content="https://ws1.sinaimg.cn/large/8840fde1gy1fu1cepd6p4j20kc05wmxr.jpg">
 
 
@@ -474,12 +474,14 @@
 <ul>
 <li><p>安装 (将安装在/usr/local/bin目录下，安装后可以在Terminal使用<code>which ios-class-guard 命令查看</code>)</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install ios-class-guard</span><br></pre></td></tr></table></figure>
+
 <p>或安装bleeding edge version(测试版)：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install --HEAD ios-class-guard</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>使用</p>
 <p>1.下载 <code>obfuscate_project</code> 到项目根目录</p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o obfuscate_project https:<span class="regexp">//</span>raw.githubusercontent.com<span class="regexp">/Polidea/i</span>os-class-guard<span class="regexp">/master/</span>contrib<span class="regexp">/obfuscate_project &amp;&amp; chmod +x obfuscate_project</span></span><br></pre></td></tr></table></figure>
+
 <p>2.使用终端或其他文本编辑工具打开<code>obfusacate_project</code> 修改PROJECT，SCHEME，CONFIGURATION，SDK等</p>
 <p><img src="https://ws1.sinaimg.cn/large/8840fde1gy1fu1cepd6p4j20kc05wmxr.jpg" alt></p>
 <p>3.按照<code>MyProject-Prefix.pch</code> 格式创建PCH文件（iOS-Class-Guard会自动查找改pch文件并引入后续生成的symbols.h）</p>
@@ -492,6 +494,7 @@
 </ul>
 <p>4.终端执行<code>bash obfuscate_project</code> (注意：如果在git环境下先commit一次代码，因为执行此命令会放弃本地所有更改，如果不在git下直接<a href="http://zipzapmac.com/go2shell" target="_blank" rel="noopener">Go2Shell</a>到终端生产Git环境</p>
 <figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git <span class="keyword">add</span><span class="bash"> .</span></span><br><span class="line">git commit -m <span class="string">"init"</span></span><br></pre></td></tr></table></figure>
+
 <p>执行<code>bash obfuscate_project</code> 若成功则为在路径下生成 <code>symbols.h</code> 与 <code>symbols.json</code> 若失败则编译项目，查看报错的地方，在<code>obfuscate_project</code> 中添加忽略项 eg: CLASS_GUARD_OPTS= “-i width” 表示不混淆width 修改完后记得commit <code>obfuscate_project</code> 文件</p>
 <p><img src="https://ws1.sinaimg.cn/large/8840fde1gy1fu1etd72vcj218g0ivwom.jpg" alt></p>
 </li>

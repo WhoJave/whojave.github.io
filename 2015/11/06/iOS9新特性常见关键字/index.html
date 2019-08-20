@@ -484,14 +484,17 @@
 <p>nullable: get方法的返回值, set方法的参数可以为空</p>
 </blockquote>
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">nullable</span>:get,set可能为空</span><br><span class="line">方式一:</span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">strong</span>, <span class="keyword">nullable</span>) <span class="built_in">NSString</span> *name;</span><br><span class="line">方式二:</span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">strong</span>) <span class="built_in">NSString</span>  * _Nullable name;</span><br><span class="line">方式三:</span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">strong</span>) <span class="built_in">NSString</span>  * __<span class="keyword">nullable</span> name;</span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>nonnull: get方法的返回值, set方法的参数都是非空的</p>
 </blockquote>
 <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">nonnull</span>:get,set非空</span><br><span class="line">方式一:</span><br><span class="line"><span class="variable">@property</span> (nonatomic ,strong, nonnull) NSString  *name;</span><br><span class="line"><span class="variable">@property</span> (nonatomic ,strong) NSString  * _Nonnull name;</span><br><span class="line"><span class="variable">@property</span> (nonatomic ,strong) NSString  * __nonnull name;</span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>null_resettable: get方法的返回值不可以为空, set方法的参数可以为空</p>
 </blockquote>
 <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">null_resettable</span>:set可以为空,get不可以为空</span><br><span class="line">注意:必须要处理为nil的情况</span><br><span class="line">方式一:</span><br><span class="line"><span class="variable">@property</span> (nonatomic ,strong, null_resettable) NSString  *name;</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>会报警告, set方法没有处理可能为空的情况</li>
 <li>必须要处理为nil的情况, 重写get方法</li>
@@ -501,6 +504,7 @@
 </blockquote>
 <p>  在设置了上述三个关键字属性之后, 用<code>点语法</code>调用get/set方法时候, 不能确定调用的是get还是set, 也就不能确定能否为空</p>
 <h2 id="关键字在方法的使用"><a href="#关键字在方法的使用" class="headerlink" title="关键字在方法的使用"></a>关键字在方法的使用</h2><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">nonnull</span> <span class="built_in">NSString</span> *)test</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">@"test"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="built_in">NSString</span> * _Nonnull)test</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">@"test"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h2 id="关键字的注意点"><a href="#关键字的注意点" class="headerlink" title="关键字的注意点:"></a>关键字的注意点:</h2><ul>
 <li><p>只能用于对象类型 </p>
 </li>
@@ -508,6 +512,7 @@
 </li>
 </ul>
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">NS_ASSUME_NONNULL_BEGIN</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 在这个宏之间, 都是nonnull的</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">NS_ASSUME_NONNULL_END</span></span><br></pre></td></tr></table></figure>
+
 <h1 id="iOS9新特性泛型"><a href="#iOS9新特性泛型" class="headerlink" title="iOS9新特性泛型"></a>iOS9新特性泛型</h1><ul>
 <li><p>泛型作用: 限制类型</p>
 </li>
@@ -527,14 +532,15 @@
 <ul>
 <li><p>如何声明泛型: 在声明一个类的时候, 在类型后面&lt;泛型名称&gt;</p>
   <figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@interface</span> NSArray<span class="variable">&lt;ObjectType&gt;</span> (NSExtendedArray)</span><br></pre></td></tr></table></figure>
+
+
 </li>
 </ul>
 </li>
 </ul>
 <pre><code>- 如何定义泛型: 在类型后面限制, &lt;限制的类型&gt;, 泛型的名称可以随意取
 
-    <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 字典的key是字符串, value是id类型</span></span><br><span class="line"><span class="built_in">NSDictionary</span>&lt;<span class="built_in">NSString</span> *, <span class="keyword">id</span>&gt; *dict;</span><br><span class="line">	</span><br><span class="line"><span class="comment">// 数组里是NSNumber类型</span></span><br><span class="line"><span class="built_in">NSArray</span>&lt;<span class="built_in">NSNumber</span> *&gt; *arr;</span><br></pre></td></tr></table></figure>
-</code></pre><ul>
+    <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 字典的key是字符串, value是id类型</span></span><br><span class="line"><span class="built_in">NSDictionary</span>&lt;<span class="built_in">NSString</span> *, <span class="keyword">id</span>&gt; *dict;</span><br><span class="line">	</span><br><span class="line"><span class="comment">// 数组里是NSNumber类型</span></span><br><span class="line"><span class="built_in">NSArray</span>&lt;<span class="built_in">NSNumber</span> *&gt; *arr;</span><br></pre></td></tr></table></figure></code></pre><ul>
 <li>注意<ul>
 <li>并不是任何对象都能使用泛型</li>
 <li>泛型只用于方法调用<ul>
@@ -545,12 +551,16 @@
 </li>
 </ul>
 <h2 id="自定义泛型-声明泛型"><a href="#自定义泛型-声明泛型" class="headerlink" title="自定义泛型(声明泛型)"></a>自定义泛型(声明泛型)</h2><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#import <span class="meta-string">&lt;Foundation/Foundation.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@class</span> <span class="title">Language</span>;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 声明泛型：不确定类型  ObjectType 随便取名</span></span><br><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">Person</span>&lt; <span class="title">ObjectType</span>&gt; : <span class="title">NSObject</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">strong</span>) ObjectType language;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
+
 <figure class="highlight inform7"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">- (void)viewDidLoad &#123;</span><br><span class="line">    <span class="comment">[super viewDidLoad]</span>;</span><br><span class="line">    </span><br><span class="line">    Java *java = <span class="comment">[<span class="comment">[Java alloc]</span> init]</span>;</span><br><span class="line">    iOS *ios = <span class="comment">[<span class="comment">[iOS alloc]</span> init]</span>;</span><br><span class="line">    </span><br><span class="line">    // iOS</span><br><span class="line">    <span class="keyword">Person</span>&lt;iOS *&gt; *<span class="keyword">person</span> = <span class="comment">[<span class="comment">[Person alloc]</span> init]</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">person</span>.language = ios;</span><br><span class="line">    </span><br><span class="line">    // Java</span><br><span class="line">    <span class="keyword">Person</span> *person1 = <span class="comment">[<span class="comment">[Person alloc]</span> init]</span>;</span><br><span class="line">    person1.language = ios;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h2 id="泛型中数据转换-协变和逆变"><a href="#泛型中数据转换-协变和逆变" class="headerlink" title="泛型中数据转换: 协变和逆变"></a>泛型中数据转换: 协变和逆变</h2><p>__covariant 协变, 向上强转, 子类转父类</p>
 <p>__contravariant 逆变, 向下强转, 父类转子类</p>
 <figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Person&lt;Language *&gt; *p1 = [[Person alloc] init]<span class="comment">;</span></span><br><span class="line">Person&lt;iOS *&gt; *p2      = [[Person alloc] init]<span class="comment">;</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">p1</span> = p2<span class="comment">; // 子类转父类, 协变消除警告__covariant</span></span><br><span class="line"><span class="attribute">p2</span> = p1<span class="comment">; // 父类转子类, 逆变消除警告__contravariant</span></span><br></pre></td></tr></table></figure>
+
 <h1 id="iOS9新特性-kindof"><a href="#iOS9新特性-kindof" class="headerlink" title="iOS9新特性 __kindof"></a>iOS9新特性 __kindof</h1><p>__kindof, 用于修饰对象, 用于方法返回值, 描述返回类型是当前类或者子类</p>
 <figure class="highlight sqf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 譬如该方法, __kindof关键字很好的解决了返回自定义cell的问题</span></span><br><span class="line"><span class="comment">// 返回值可以使UITableVCell, 也可以是其子类</span></span><br><span class="line">- (<span class="variable">__kindof</span> UITableViewCell * <span class="variable">_Nullable</span>)dequeueReusableCellWithIdentifier:(NSString * <span class="variable">_Nonnull</span>)identifier</span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>返回值类型的演变id –&gt; instancetype –&gt; __kindof</p>
 </blockquote>

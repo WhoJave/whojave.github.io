@@ -618,13 +618,16 @@
         
           
             <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">查看bash 版本</span></span><br><span class="line">bash -version</span><br></pre></td></tr></table></figure>
+
 <p>版本升级：</p>
 <p>方式1：brew安装 直接升级到最新版bash</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install bash</span><br></pre></td></tr></table></figure>
+
 <p>方式2：升级到指定版本 </p>
 <p>Bash 下载地址: <a href="http://ftp.gnu.org/gnu/bash/" target="_blank" rel="noopener">http://ftp.gnu.org/gnu/bash/</a></p>
 <p>选择要安装的版本，复制下载链接</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">wget http://ftp.gnu.org/gnu/bash/bash-4.4.tar.gz</span><br><span class="line">tar zxvf bash-4.4.tar.gz</span><br><span class="line">cd bash-4.4</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br><span class="line"><span class="meta">#</span><span class="bash">版本替换</span></span><br><span class="line">sudo mv /bin/bash /bin/bash.origin</span><br><span class="line">sudo ln -s /usr/local/opt/bash/bin/bash /bin/bash\n</span><br><span class="line"><span class="meta">#</span><span class="bash">由于本mac版本下的sh并不是直接链接bash，而是bash的一个文件拷贝。因此，还要替换默认的sh指向的命令为bash，如下：</span></span><br><span class="line">sudo mv /bin/sh /bin/sh.origin</span><br><span class="line">sudo ln -s /usr/local/opt/bash/bin/bash /bin/sh\n</span><br><span class="line">bash -version</span><br></pre></td></tr></table></figure>
+
 
           
         
@@ -922,12 +925,14 @@
 <ul>
 <li><p>安装 (将安装在/usr/local/bin目录下，安装后可以在Terminal使用<code>which ios-class-guard 命令查看</code>)</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install ios-class-guard</span><br></pre></td></tr></table></figure>
+
 <p>或安装bleeding edge version(测试版)：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install --HEAD ios-class-guard</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>使用</p>
 <p>1.下载 <code>obfuscate_project</code> 到项目根目录</p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o obfuscate_project https:<span class="regexp">//</span>raw.githubusercontent.com<span class="regexp">/Polidea/i</span>os-class-guard<span class="regexp">/master/</span>contrib<span class="regexp">/obfuscate_project &amp;&amp; chmod +x obfuscate_project</span></span><br></pre></td></tr></table></figure>
+
 <p>2.使用终端或其他文本编辑工具打开<code>obfusacate_project</code> 修改PROJECT，SCHEME，CONFIGURATION，SDK等</p>
 <p><img src="https://ws1.sinaimg.cn/large/8840fde1gy1fu1cepd6p4j20kc05wmxr.jpg" alt></p>
 <p>3.按照<code>MyProject-Prefix.pch</code> 格式创建PCH文件（iOS-Class-Guard会自动查找改pch文件并引入后续生成的symbols.h）</p>
@@ -940,6 +945,7 @@
 </ul>
 <p>4.终端执行<code>bash obfuscate_project</code> (注意：如果在git环境下先commit一次代码，因为执行此命令会放弃本地所有更改，如果不在git下直接<a href="http://zipzapmac.com/go2shell" target="_blank" rel="noopener">Go2Shell</a>到终端生产Git环境</p>
 <figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git <span class="keyword">add</span><span class="bash"> .</span></span><br><span class="line">git commit -m <span class="string">"init"</span></span><br></pre></td></tr></table></figure>
+
 <p>执行<code>bash obfuscate_project</code> 若成功则为在路径下生成 <code>symbols.h</code> 与 <code>symbols.json</code> 若失败则编译项目，查看报错的地方，在<code>obfuscate_project</code> 中添加忽略项 eg: CLASS_GUARD_OPTS= “-i width” 表示不混淆width 修改完后记得commit <code>obfuscate_project</code> 文件</p>
 <p><img src="https://ws1.sinaimg.cn/large/8840fde1gy1fu1etd72vcj218g0ivwom.jpg" alt></p>
 </li>

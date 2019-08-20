@@ -98,18 +98,18 @@
 
 
 
-  <meta name="description" content="12#查看bash 版本bash -version 版本升级： 方式1：brew安装 直接升级到最新版bash 1brew install bash 方式2：升级到指定版本  Bash 下载地址: http://ftp.gnu.org/gnu/bash/ 选择要安装的版本，复制下载链接 12345678910111213wget http://ftp.gnu.org/gnu/bash/bash-4">
+  <meta name="description" content="12#查看bash 版本bash -version  版本升级： 方式1：brew安装 直接升级到最新版bash 1brew install bash  方式2：升级到指定版本  Bash 下载地址: http://ftp.gnu.org/gnu/bash/ 选择要安装的版本，复制下载链接 12345678910111213wget http://ftp.gnu.org/gnu/bash/bash">
 <meta name="keywords" content="Mac,Bash">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何更新Mac Bash">
 <meta property="og:url" content="https://onepiece.fun/2019/02/26/如何更新Mac-Bash/index.html">
 <meta property="og:site_name" content="OnePiece&#39;s Blog">
-<meta property="og:description" content="12#查看bash 版本bash -version 版本升级： 方式1：brew安装 直接升级到最新版bash 1brew install bash 方式2：升级到指定版本  Bash 下载地址: http://ftp.gnu.org/gnu/bash/ 选择要安装的版本，复制下载链接 12345678910111213wget http://ftp.gnu.org/gnu/bash/bash-4">
+<meta property="og:description" content="12#查看bash 版本bash -version  版本升级： 方式1：brew安装 直接升级到最新版bash 1brew install bash  方式2：升级到指定版本  Bash 下载地址: http://ftp.gnu.org/gnu/bash/ 选择要安装的版本，复制下载链接 12345678910111213wget http://ftp.gnu.org/gnu/bash/bash">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-02-26T13:05:20.358Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何更新Mac Bash">
-<meta name="twitter:description" content="12#查看bash 版本bash -version 版本升级： 方式1：brew安装 直接升级到最新版bash 1brew install bash 方式2：升级到指定版本  Bash 下载地址: http://ftp.gnu.org/gnu/bash/ 选择要安装的版本，复制下载链接 12345678910111213wget http://ftp.gnu.org/gnu/bash/bash-4">
+<meta name="twitter:description" content="12#查看bash 版本bash -version  版本升级： 方式1：brew安装 直接升级到最新版bash 1brew install bash  方式2：升级到指定版本  Bash 下载地址: http://ftp.gnu.org/gnu/bash/ 选择要安装的版本，复制下载链接 12345678910111213wget http://ftp.gnu.org/gnu/bash/bash">
 
 
 
@@ -464,13 +464,16 @@
 
       
         <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">查看bash 版本</span></span><br><span class="line">bash -version</span><br></pre></td></tr></table></figure>
+
 <p>版本升级：</p>
 <p>方式1：brew安装 直接升级到最新版bash</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install bash</span><br></pre></td></tr></table></figure>
+
 <p>方式2：升级到指定版本 </p>
 <p>Bash 下载地址: <a href="http://ftp.gnu.org/gnu/bash/" target="_blank" rel="noopener">http://ftp.gnu.org/gnu/bash/</a></p>
 <p>选择要安装的版本，复制下载链接</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">wget http://ftp.gnu.org/gnu/bash/bash-4.4.tar.gz</span><br><span class="line">tar zxvf bash-4.4.tar.gz</span><br><span class="line">cd bash-4.4</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br><span class="line"><span class="meta">#</span><span class="bash">版本替换</span></span><br><span class="line">sudo mv /bin/bash /bin/bash.origin</span><br><span class="line">sudo ln -s /usr/local/opt/bash/bin/bash /bin/bash\n</span><br><span class="line"><span class="meta">#</span><span class="bash">由于本mac版本下的sh并不是直接链接bash，而是bash的一个文件拷贝。因此，还要替换默认的sh指向的命令为bash，如下：</span></span><br><span class="line">sudo mv /bin/sh /bin/sh.origin</span><br><span class="line">sudo ln -s /usr/local/opt/bash/bin/bash /bin/sh\n</span><br><span class="line">bash -version</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
